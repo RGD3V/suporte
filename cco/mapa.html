@@ -77,7 +77,23 @@
                 mapContainer.appendChild(iframe);
             }
         }
+         var selectElement = document.getElementById('mySelect');
+
+        selectElement.addEventListener('mouseover', function(event) {
+            var target = event.target;
+            if (target.tagName.toLowerCase() === 'option') {
+                // Adiciona a classe de destaque à opção sobre a qual o mouse está passando
+                target.classList.add('highlight');
+            }
+        });
+
+        selectElement.addEventListener('mouseout', function(event) {
+            var target = event.target;
+            if (target.tagName.toLowerCase() === 'option') {
+                // Remove a classe de destaque quando o mouse sai da opção
+                target.classList.remove('highlight');
+            }
+        });
     </script>
 </body>
-
 </html>
