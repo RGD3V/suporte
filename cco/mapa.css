@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    padding-top:5px;
+    padding-right: 5px;
+}
+
+select{
+    padding: 4px;
+    border: 2.5px solid #fda40028;
+    border-radius: 7px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+select:hover,
+select:focus {
+    border-color: #fda500;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+#mapContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
