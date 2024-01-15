@@ -44,7 +44,7 @@ body main {
     text-decoration: none;
     background-color: orangered;
     color: white;
-    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+    box-shadow: 0px 0px 5px rgb(63, 63, 63);
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
