@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas</title>
+</head>
+
+<body>
+    <form>
+        <label for="menu">Selecione o Patio:</label>
+        <select id="menu" name="menu" onchange="showMap()">
+            <option value="" disabled="" selected="" hidden="">Selecione um Pátio</option>
+            <option value="AGUDOS">AGUDOS</option>
+            <option value="ARARAQUARA">ARARAQUARA</option>
+            <option value="AVARÉ">AVARÉ</option>
+            <option value="BARRETOS">BARRETOS</option>
+            <option value="BOTUCATU">BOTUCATU</option>
+            <option value="CARAGUATATUBA">CARAGUATATUBA</option>
+            <option value="DRACENA">DRACENA</option>
+            <option value="GUARARAPES">GUARARAPES</option>
+            <option value="JAÚ">JAÚ</option>
+            <option value="MARILIA">MARILIA</option>
+            <option value="MAUA">MAUA</option>
+            <option value="MIRASSOL">MIRASSOL</option>
+            <option value="OURINHOS">OURINHOS</option>
+            <option value="PRESIDENTE PRUDENTE">PRESIDENTE PRUDENTE</option>
+            <option value="SANTANA">SANTANA</option>
+            <option value="SJ. DO RIO PRETO">SJ. DO RIO PRETO</option>
+            <option value="SJ. DOS PINHAIS">SJ. DOS PINHAIS</option>
+            <option value="SOROCABA">SOROCABA</option>
+            <option value="TEODORO SAMPAIO">TEODORO SAMPAIO</option>
+            <option value="TREMEMBÉ">TREMEMBÉ</option>
+            <option value="UBATUBA">UBATUBA</option>
+        </select>
+    </form>
+
+    <div id="mapContainer">
+        <!-- O iframe do mapa será inserido aqui -->
+    </div>
+
+    <script>
+        var mapURLs = {
+            "AGUDOS": "URL_DO_MAPA_PARA_AGUDOS",
+            "ARARAQUARA": "URL_DO_MAPA_PARA_ARARAQUARA",
+            "AVARÉ": "URL_DO_MAPA_PARA_AVARÉ",
+            "BARRETOS": "URL_DO_MAPA_PARA_BARRETOS",
+            "BOTUCATU": "URL_DO_MAPA_PARA_BOTUCATU",
+            "CARAGUATATUBA": "URL_DO_MAPA_PARA_CARAGUATATUBA",
+            "DRACENA": "https://www.google.com/maps/d/embed?mid=1IiKgQ897NfBa-W68tuWIDapJhht1UfU&ehbc=2E312F",
+            "GUARARAPES": "URL_DO_MAPA_PARA_GUARARAPES",
+            "JAÚ": "URL_DO_MAPA_PARA_JAÚ",
+            "MARILIA": "URL_DO_MAPA_PARA_MARILIA",
+            "MAUA": "URL_DO_MAPA_PARA_MAUÁ",
+            "MIRASSOL": "URL_DO_MAPA_PARA_MIRASSOL",
+            "OURINHOS": "URL_DO_MAPA_PARA_OURINHOS",
+            "PRESIDENTE PRUDENTE": "https://www.google.com/maps/d/embed?mid=1H3bxFx-kfWBqzbfZDRgCU7i88geK5Mk&ehbc=2E312F",
+            "SANTANA": "URL_DO_MAPA_PARA_SANTANA",
+            "SJ. DO RIO PRETO": "URL_DO_MAPA_PARA_SJ_RIO_PRETO",
+            "SJ. DOS PINHAIS": "URL_DO_MAPA_PARA_SJ_DOS_PINHAIS",
+            "SOROCABA": "URL_DO_MAPA_PARA_SOROCABA",
+            "TEODORO SAMPAIO": "URL_DO_MAPA_PARA_TEODORO_SAMPAIO",
+            "TREMEMBÉ": "URL_DO_MAPA_PARA_TREMEMBÉ",
+            "UBATUBA": "URL_DO_MAPA_PARA_UBATUBA"
+        };
+
+        function showMap() {
+            var menu = document.getElementById("menu");
+            var selectedPatio = menu.options[menu.selectedIndex].value;
+            var mapContainer = document.getElementById("mapContainer");
+
+            // Remova o mapa existente, se houver
+            while (mapContainer.firstChild) {
+                mapContainer.removeChild(mapContainer.firstChild);
+            }
+
+            // Crie um novo iframe com base no pátio selecionado
+            if (selectedPatio !== "") {
+                var iframe = document.createElement("iframe");
+                iframe.src = mapURLs[selectedPatio] || "";
+                iframe.width = "640";
+                iframe.height = "480";
+                mapContainer.appendChild(iframe);
+            }
+        }
+    </script>
+</body>
+
+</html>
