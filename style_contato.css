@@ -35,7 +35,8 @@ body main {
 #menu ul li {
     display:inline;
     margin-right: 0px;
-    padding: 5px;
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
 #menu ul li a {
@@ -54,18 +55,28 @@ body main {
     color: orangered;
 }
 
+#div_tabela {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    min-width: 150px;
+    margin: auto;
+    overflow-x: scroll;
+    box-shadow: 0px 0px 3px black;
+}
+
 main table{
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
-    margin-bottom: 50px;
-    box-shadow: 0px 0px 3px black;
+    width: 100%;
+    min-width: 150px;
+    margin-bottom: 5px;
 }
 
 main table thead tr,th {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 10px;
+    padding: 5px;
     background-color: orangered;
     color: white;   
 }
@@ -75,13 +86,13 @@ main table tbody tr,td {
     border-collapse: collapse;
     padding: 5px;
     text-align: center;
-    background-color: white;
     font-size: 14px;
 }
 
 main table tbody tr:hover {
     font-weight: bold;
     color: orangered;
+    background-color: rgb(240, 167, 107);
 }
 
 .href_whats {
@@ -91,6 +102,18 @@ main table tbody tr:hover {
 
 .href_whats:hover {
     background-color: rgb(57, 223, 7);
-    padding: 8px;
+    padding: 3px 5px;
     border-radius: 20px;
 }
+
+.th1 {
+    padding: 5px 30px 
+}
+
+    .th2 {
+        padding: 5px 5px 
+    }
+
+        .th3 {
+            padding: 5px 50px 
+        }
