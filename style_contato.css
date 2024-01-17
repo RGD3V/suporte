@@ -91,7 +91,6 @@ main table tbody tr,td {
 
 main table tbody tr:hover {
     font-weight: bold;
-    color: orangered;
     background-color: rgb(240, 167, 107);
 }
 
