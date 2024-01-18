@@ -60,7 +60,6 @@ body main {
     width: 95%;
     min-width: 150px;
     margin: auto;
-    overflow-x: scroll;
     box-shadow: 0px 0px 3px black;
 }
 
@@ -115,4 +114,13 @@ main table tbody tr:hover {
 
         .th3 {
             padding: 5px 50px 
+            
         }
+
+
+@media (max-width: 1000px) {
+    #div_tabela {
+    overflow-x: scroll;
+    }
+}
+
