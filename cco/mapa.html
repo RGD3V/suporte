@@ -10,37 +10,38 @@
 </head>
 
 <body>
-    <form>
-        <label for="menu">Selecione o Patio:</label>
-        <select id="menu" name="menu" onchange="showMap()">
-            <option value="" disabled="" selected="" hidden="">Selecione um Pátio</option>
-            <option value="AGUDOS">AGUDOS</option>
-            <option value="ARARAQUARA">ARARAQUARA</option>
-            <option value="AVARÉ">AVARÉ</option>
-            <option value="BARRETOS">BARRETOS</option>
-            <option value="BOTUCATU">BOTUCATU</option>
-            <option value="CARAGUATATUBA">CARAGUATATUBA</option>
-            <option value="DRACENA">DRACENA</option>
-            <option value="GUARARAPES">GUARARAPES</option>
-            <option value="JAÚ">JAÚ</option>
-            <option value="MARILIA">MARILIA</option>
-            <option value="OURINHOS">OURINHOS</option>
-            <option value="PRESIDENTE PRUDENTE">PRESIDENTE PRUDENTE</option>
-            <option value="SANTANA">SANTANA</option>
-            <option value="SJ. DO RIO PRETO">SJ. DO RIO PRETO</option>
-            <option value="SOROCABA">SOROCABA</option>
-            <option value="TEODORO SAMPAIO">TEODORO SAMPAIO</option>
-            <option value="UBATUBA">UBATUBA</option>
-        </select>
-    </form>
+    <div>
+        <form>
+            <label for="menu">Selecione o Patio:</label>
+            <select id="menu" name="menu" onchange="showMap()">
+                <option value="" disabled="" selected="" hidden=""></option>
+                <option value="AGUDOS">AGUDOS</option>
+                <option value="ARARAQUARA">ARARAQUARA</option>
+                <option value="AVARÉ">AVARÉ</option>
+                <option value="BARRETOS">BARRETOS</option>
+                <option value="BOTUCATU">BOTUCATU</option>
+                <option value="CARAGUATATUBA">CARAGUATATUBA</option>
+                <option value="DRACENA">DRACENA</option>
+                <option value="GUARARAPES">GUARARAPES</option>
+                <option value="JAÚ">JAÚ</option>
+                <option value="MARILIA">MARILIA</option>
+                <option value="OURINHOS">OURINHOS</option>
+                <option value="PRESIDENTE PRUDENTE">PRESIDENTE PRUDENTE</option>
+                <option value="SANTANA">SANTANA</option>
+                <option value="SJ. DO RIO PRETO">SJ. DO RIO PRETO</option>
+                <option value="SOROCABA">SOROCABA</option>
+                <option value="TEODORO SAMPAIO">TEODORO SAMPAIO</option>
+                <option value="UBATUBA">UBATUBA</option>
+            </select>
+            <a href="../index.html">Voltar</a>
+        </form>
+    </div>
 
     <div id="mapContainer">
-        
+
     </div>
 
-    <div>
-        <a href="../index.html">Voltar</a>
-    </div>
+
 
     <script>
         var mapURLs = {
@@ -82,9 +83,9 @@
                 mapContainer.appendChild(iframe);
             }
         }
-         var selectElement = document.getElementById('mySelect');
+        var selectElement = document.getElementById('mySelect');
 
-        selectElement.addEventListener('mouseover', function(event) {
+        selectElement.addEventListener('mouseover', function (event) {
             var target = event.target;
             if (target.tagName.toLowerCase() === 'option') {
                 // Adiciona a classe de destaque à opção sobre a qual o mouse está passando
@@ -92,7 +93,7 @@
             }
         });
 
-        selectElement.addEventListener('mouseout', function(event) {
+        selectElement.addEventListener('mouseout', function (event) {
             var target = event.target;
             if (target.tagName.toLowerCase() === 'option') {
                 // Remove a classe de destaque quando o mouse sai da opção
@@ -101,4 +102,5 @@
         });
     </script>
 </body>
+
 </html>
