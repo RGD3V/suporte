@@ -9,631 +9,533 @@
 </head>
 
 <body>
-    
-
-    <p id="tabela">Tabelas</p>
-
-    <select id="cidadeDropdown" onchange="mostrarTabela()">
-        <option value="" disabled selected hidden>Selecione um Pátio</option>
-        <option value="barretos">Barretos</option>
-        <option value="dracena">Dracena</option>
-        <option value="presidentePrudente">Presidente Prudente</option>
-        <option value="saoJoseDoRioPreto">São José do Rio Preto</option>
-        <option value="maua">Mauá</option>
-        <option value="tremembe">Tremembé</option>
-    </select>
-
-    <div id="dracenaTable" class="cidade-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome do Motorista</th>
-                    <th>Placa do Veículo</th>
-                    <th>Modelo</th>
-                    <th>Cidades</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="mario">
-                    <td>Mario Jose da Rocha</td>
-                    <td>EVF1H56</td>
-                    <td>M.Benz/ accelo 1016</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Dracena">Dracena</option>
-                            <option value="Flora Rica">Flora Rica</option>
-                            <option value="Irapuru">Irapuru</option>
-                            <option value="Junqueiropolis">Junqueiropolis</option>
-                            <option value="Monte Castelo Santa Mercedes">Monte Castelo Santa Mercedes</option>
-                            <option value="Nova Guataporanga">Nova Guataporanga</option>
-                            <option value="Ouro Verde">Ouro Verde</option>
-                            <option value="Pacaembu">Pacaembu</option>
-                            <option value="Panorama">Panorama</option>
-                            <option value="Pauliceia">Pauliceia</option>
-                            <option value="São João do Pau D'Alho">São João do Pau D'Alho</option>
-                            <option value="Tupi Paulista">Tupi Paulista</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="marcos">
-                    <td>Marcos Antonio Ribeiro</td>
-                    <td>AQQ3686</td>
-                    <td>VW/8. 150E Delivery</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Adamantina">Adamantina</option>
-                            <option value="Lucelia">Lucelia</option>
-                            <option value="Oswaldo Cruz">Oswaldo Cruz</option>
-                            <option value="Inubia Paulista">Inubia Paulista</option>
-                            <option value="Salmourão">Salmourão</option>
-                            <option value="Sagres">Sagres</option>
-                            <option value="Florida Paulista">Florida Paulista</option>
-                            <option value="Mariopolis">Mariopolis</option>
-                            <option value="Pracinha">Pracinha</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="selecione">
+        <select id="cidadeDropdown" onchange="mostrarTabela()">
+            <option value="" disabled selected hidden>Selecione um Pátio</option>
+            <option value="barretos">Barretos</option>
+            <option value="dracena">Dracena</option>
+            <option value="presidentePrudente">Presidente Prudente</option>
+            <option value="saoJoseDoRioPreto">São José do Rio Preto</option>
+            <option value="maua">Mauá</option>
+            <option value="tremembe">Tremembé</option>
+        </select>
+        <a href="../index.html">Voltar</a>
     </div>
 
-    <div id="barretosTable" class="cidade-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome do Motorista</th>
-                    <th>Placa do Veículo</th>
-                    <th>Modelo</th>
-                    <th>Cidades</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="rodrigo">
-                    <td>Rodrigo Roberto</td>
-                    <td>FKR3D50</td>
-                    <td>VW 10160</td>
-                    <td>
-                        <select>
-                            <option value="Barretos">Barretos</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="eric">
-                    <td>Eric Pellegrin</td>
-                    <td>EFV1B78</td>
-                    <td>VW/8.120 EURO3</td>
-                    <td>
-                        <select>
-                            <option value="Guaira">Guaira</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div>
+        <div id="dracenaTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Motorista</th>
+                        <th>Placa do Veículo</th>
+                        <th>Modelo</th>
+                        <th>Cidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="mario">
+                        <td>Mario Jose da Rocha</td>
+                        <td>EVF1H56</td>
+                        <td>M.Benz/ accelo 1016</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Dracena">Dracena</option>
+                                <option value="Flora Rica">Flora Rica</option>
+                                <option value="Irapuru">Irapuru</option>
+                                <option value="Junqueiropolis">Junqueiropolis</option>
+                                <option value="Monte Castelo Santa Mercedes">Monte Castelo Santa Mercedes</option>
+                                <option value="Nova Guataporanga">Nova Guataporanga</option>
+                                <option value="Ouro Verde">Ouro Verde</option>
+                                <option value="Pacaembu">Pacaembu</option>
+                                <option value="Panorama">Panorama</option>
+                                <option value="Pauliceia">Pauliceia</option>
+                                <option value="São João do Pau D'Alho">São João do Pau D'Alho</option>
+                                <option value="Tupi Paulista">Tupi Paulista</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="marcos">
+                        <td>Marcos Antonio Ribeiro</td>
+                        <td>AQQ3686</td>
+                        <td>VW/8. 150E Delivery</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Adamantina">Adamantina</option>
+                                <option value="Lucelia">Lucelia</option>
+                                <option value="Oswaldo Cruz">Oswaldo Cruz</option>
+                                <option value="Inubia Paulista">Inubia Paulista</option>
+                                <option value="Salmourão">Salmourão</option>
+                                <option value="Sagres">Sagres</option>
+                                <option value="Florida Paulista">Florida Paulista</option>
+                                <option value="Mariopolis">Mariopolis</option>
+                                <option value="Pracinha">Pracinha</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="barretosTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Motorista</th>
+                        <th>Placa do Veículo</th>
+                        <th>Modelo</th>
+                        <th>Cidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="rodrigo">
+                        <td>Rodrigo Roberto</td>
+                        <td>FKR3D50</td>
+                        <td>VW 10160</td>
+                        <td>Barretos</td>
+                    </tr>
+                    <tr id="eric">
+                        <td>Eric Pellegrin</td>
+                        <td>EFV1B78</td>
+                        <td>VW/8.120 EURO3</td>
+                        <td>Guaira</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="presidentePrudenteTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Motorista</th>
+                        <th>Placa do Veículo</th>
+                        <th>Modelo</th>
+                        <th>Cidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="pvieira">
+                        <td>Jose Luiz da Silva Vieira</td>
+                        <td>JZV2359</td>
+                        <td>M. BENS 915C</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Presidente Prudente">Presidente Prudente</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="pvalmir">
+                        <td>Valmir Cinezio Bezerro
+                        </td>
+                        <td>EDH1H42</td>
+                        <td>VW 8150</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Presidente Prudente">Presidente Prudente</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="pcassio">
+                        <td>Cassio Haro Campagnollo</td>
+                        <td>HSI5B18</td>
+                        <td>VW 815 E</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Caiuá">Caiuá</option>
+                                <option value="Marabá Paulista">Marabá Paulista</option>
+                                <option value="Piquerobi">Piquerobi</option>
+                                <option value="Presidente Epitácio">Presidente Epitácio</option>
+                                <option value="Presidente Venceslau">Presidente Venceslau</option>
+                                <option value="Ribeirão dos Índios">Ribeirão dos Índios</option>
+                                <option value="Santo Anastácio">Santo Anastácio</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="pdenis">
+                        <td>Denis Antonio de Andrade</td>
+                        <td>GGE8A28</td>
+                        <td>FORD/ CARGO 816 </td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Iepê">Iepê</option>
+                                <option value="João Ramalho">João Ramalho</option>
+                                <option value="Nantes">Nantes</option>
+                                <option value="Rancharia">Rancharia</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="phugles">
+                        <td>Hugues Charles Laval</td>
+                        <td>ARP6598</td>
+                        <td>FORD/ CARGO 815 E</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Alfredo Marcondes">Alfredo Marcondes</option>
+                                <option value="Álvares Machado">Álvares Machado</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Santo Expedito">Santo Expedito</option>
+                                <option value="Taciba">Taciba</option>
+                                <option value="Anhumas">Anhumas</option>
+                                <option value="Caiabu">Caiabu</option>
+                                <option value="Pirapozinho">Pirapozinho</option>
+                                <option value="Presidente Bernardes">Presidente Bernardes</option>
+                                <option value="Emilianópolis">Emilianópolis</option>
+                                <option value="Martinópolis">Martinópolis</option>
+                                <option value="Narandiba">Narandiba</option>
+                                <option value="Regente Feijó">Regente Feijó</option>
+                                <option value="Tarabai">Tarabai</option>
+                                <option value="Estrela do Norte">Estrela do Norte</option>
+                                <option value="Sandovalina">Sandovalina</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="pclaudio">
+                        <td>Claudio Henrique Dela Pedra</td>
+                        <td>ARP6598 <br> PEQ4C37 <br> EVU 4266 </td>
+                        <td>FORD/ CARGO 815 <br> VW/ 13.180 <br> FORD/ CARGO 816 S</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Alfredo Marcondes">Alfredo Marcondes</option>
+                                <option value="Álvares Machado">Álvares Machado</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Santo Expedito">Santo Expedito</option>
+                                <option value="Taciba">Taciba</option>
+                                <option value="Anhumas">Anhumas</option>
+                                <option value="Caiabu">Caiabu</option>
+                                <option value="Pirapozinho">Pirapozinho</option>
+                                <option value="Presidente Bernardes">Presidente Bernardes</option>
+                                <option value="Emilianópolis">Emilianópolis</option>
+                                <option value="Martinópolis">Martinópolis</option>
+                                <option value="Narandiba">Narandiba</option>
+                                <option value="Regente Feijó">Regente Feijó</option>
+                                <option value="Tarabai">Tarabai</option>
+                                <option value="Estrela do Norte">Estrela do Norte</option>
+                                <option value="Sandovalina">Sandovalina</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="pkleber">
+                        <td>Kleber Aparecido Teodoro</td>
+                        <td>EJC 6394 <br> EVU 4266</td>
+                        <td>VW/8.120 EURO3 <br> FORD/ CARGO 816 S</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Alfredo Marcondes">Alfredo Marcondes</option>
+                                <option value="Álvares Machado">Álvares Machado</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Santo Expedito">Santo Expedito</option>
+                                <option value="Taciba">Taciba</option>
+                                <option value="Anhumas">Anhumas</option>
+                                <option value="Caiabu">Caiabu</option>
+                                <option value="Pirapozinho">Pirapozinho</option>
+                                <option value="Presidente Bernardes">Presidente Bernardes</option>
+                                <option value="Emilianópolis">Emilianópolis</option>
+                                <option value="Martinópolis">Martinópolis</option>
+                                <option value="Narandiba">Narandiba</option>
+                                <option value="Regente Feijó">Regente Feijó</option>
+                                <option value="Tarabai">Tarabai</option>
+                                <option value="Estrela do Norte">Estrela do Norte</option>
+                                <option value="Sandovalina">Sandovalina</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="pvagner">
+                        <td>Vagner de moura bezerro</td>
+                        <td>HFB7B79</td>
+                        <td>FORD CARGO 816</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="Alfredo Marcondes">Alfredo Marcondes</option>
+                                <option value="Álvares Machado">Álvares Machado</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Santo Expedito">Santo Expedito</option>
+                                <option value="Taciba">Taciba</option>
+                                <option value="Anhumas">Anhumas</option>
+                                <option value="Caiabu">Caiabu</option>
+                                <option value="Pirapozinho">Pirapozinho</option>
+                                <option value="Presidente Bernardes">Presidente Bernardes</option>
+                                <option value="Emilianópolis">Emilianópolis</option>
+                                <option value="Martinópolis">Martinópolis</option>
+                                <option value="Narandiba">Narandiba</option>
+                                <option value="Regente Feijó">Regente Feijó</option>
+                                <option value="Tarabai">Tarabai</option>
+                                <option value="Estrela do Norte">Estrela do Norte</option>
+                                <option value="Sandovalina">Sandovalina</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="saoJoseDoRioPretoTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Motorista</th>
+                        <th>Placa do Veículo</th>
+                        <th>Modelo</th>
+                        <th>Cidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="douglas">
+                        <td>Douglas Vicente Rodrigues</td>
+                        <td>LNI2A69</td>
+                        <td>VW/8.120</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="São José R. Preto">São José R. Preto</option>
+                                <option value="Monte Aprazível">Monte Aprazível</option>
+                                <option value="Ipiguá">Ipiguá</option>
+                                <option value="Mirassolândia">Mirassolândia</option>
+                                <option value="Macaubal">Macaubal</option>
+                                <option value="Bálsamo">Bálsamo</option>
+                                <option value="Bady Bassitt">Bady Bassitt</option>
+                                <option value="Catiguá">Catiguá</option>
+                                <option value="Cosmorama">Cosmorama</option>
+                                <option value="Embaúba">Embaúba</option>
+                                <option value="Engenheiro Schmitt">Engenheiro Schmitt</option>
+                                <option value="General Salgado">General Salgado</option>
+                                <option value="Icém">Icém</option>
+                                <option value="Itajobi">Itajobi</option>
+                                <option value="Nhandeara">Nhandeara</option>
+                                <option value="Novais">Novais</option>
+                                <option value="Monte Aprazível">Monte Aprazível</option>
+                                <option value="Mirassolândia">Mirassolândia</option>
+                                <option value="Nipuã">Nipuã</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="helio">
+                        <td>Helio de Souza Guimaraes</td>
+                        <td>AKH4187</td>
+                        <td>MERCEDES BENZ 710</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="São José R. Preto">São José R. Preto</option>
+                                <option value="Monte Aprazível">Monte Aprazível</option>
+                                <option value="Ipiguá">Ipiguá</option>
+                                <option value="Mirassolândia">Mirassolândia</option>
+                                <option value="Macaubal">Macaubal</option>
+                                <option value="Bálsamo">Bálsamo</option>
+                                <option value="Bady Bassitt">Bady Bassitt</option>
+                                <option value="Catiguá">Catiguá</option>
+                                <option value="Cosmorama">Cosmorama</option>
+                                <option value="Embaúba">Embaúba</option>
+                                <option value="Engenheiro Schmitt">Engenheiro Schmitt</option>
+                                <option value="General Salgado">General Salgado</option>
+                                <option value="Icém">Icém</option>
+                                <option value="Itajobi">Itajobi</option>
+                                <option value="Nhandeara">Nhandeara</option>
+                                <option value="Novais">Novais</option>
+                                <option value="Monte Aprazível">Monte Aprazível</option>
+                                <option value="Mirassolândia">Mirassolândia</option>
+                                <option value="Nipuã">Nipuã</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="valdir">
+                        <td>Valdir Simões da Silva</td>
+                        <td>NFG5909</td>
+                        <td>VW 8.150</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione uma cidade</option>
+                                <option value="São José R. Preto">São José R. Preto</option>
+                                <option value="Monte Aprazível">Monte Aprazível</option>
+                                <option value="Ipiguá">Ipiguá</option>
+                                <option value="Mirassolândia">Mirassolândia</option>
+                                <option value="Macaubal">Macaubal</option>
+                                <option value="Bálsamo">Bálsamo</option>
+                                <option value="Bady Bassitt">Bady Bassitt</option>
+                                <option value="Catiguá">Catiguá</option>
+                                <option value="Cosmorama">Cosmorama</option>
+                                <option value="Embaúba">Embaúba</option>
+                                <option value="Engenheiro Schmitt">Engenheiro Schmitt</option>
+                                <option value="General Salgado">General Salgado</option>
+                                <option value="Icém">Icém</option>
+                                <option value="Itajobi">Itajobi</option>
+                                <option value="Nhandeara">Nhandeara</option>
+                                <option value="Novais">Novais</option>
+                                <option value="Monte Aprazível">Monte Aprazível</option>
+                                <option value="Mirassolândia">Mirassolândia</option>
+                                <option value="Nipuã">Nipuã</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="edemir">
+                        <td>Edemir Maciel Fuzzaro</td>
+                        <td>GHJ8E00</td>
+                        <td>FORD/CARGO 1119</td>
+                        <td>
+                            <select>
+                                <option disabled selected hidden value="">Selecione uma cidade</option>
+                                <option value="cedral">Cedral</option>
+                                <option value="guapiaçu">Guapiaçu</option>
+                                <option value="Uchoa">Uchoa</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="mauaTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Motorista</th>
+                        <th>Placa do Veículo</th>
+                        <th>Modelo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="hudson">
+                        <td>Hudson Farley Farias Santos</td>
+                        <td>KQQ7868</td>
+                        <td>VW/8.160DARC 4X2</td>
+                    </tr>
+                    <tr id="breno">
+                        <td>Breno Wesley Silva</td>
+                        <td>FQL0999</td>
+                        <td>VW/9.150E CUMMINS</td>
+                    </tr>
+                    <tr id="fabio">
+                        <td>Fabio Fernandes</td>
+                        <td>FQL0999</td>
+                        <td>VW/9.150E CUMMINS</td>
+                    </tr>
+                    <tr id="emerson">
+                        <td>Emerson de Viveiros </td>
+                        <td>BKO3I82</td>
+                        <td>VW/7.90 S</td>
+                    </tr>
+                    <tr id="edson">
+                        <td>Edson de viveiros</td>
+                        <td>DDT5H84</td>
+                        <td>FORD/F250 XL K</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tremembeTable" class="cidade-table">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome do Motorista</th>
+                        <th>Placa do Veículo</th>
+                        <th>Modelo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="anderderson">
+                        <td>Anderson Aparecido de Souza</td>
+                        <td>BOO0683</td>
+                        <td>VW/8.140</td>
+                    </tr>
+                    <tr id="joseCarlos">
+                        <td>Jose Carlos Alves Gouvea</td>
+                        <td>FUI2H91</td>
+                        <td>VW/9 150 E DELIVERY</td>
+                    </tr>
+                    <tr id="helioAndreza">
+                        <td>Helio Andreza</td>
+                        <td>CYB3I48</td>
+                        <td>M.BENZ/L 608 D</td>
+                    </tr>
+                    <tr id="olavoPirez">
+                        <td>Olavo Pires Basilio</td>
+                        <td>ESU3335</td>
+                        <td>VW/9 .160 DRC 4X2</td>
+                    </tr>
+                    <tr id="vladmirRodrigues">
+                        <td>Vladimir Rodrigues</td>
+                        <td>EMU3467</td>
+                        <td>FORD/CARGO 816 S</td>
+                    </tr>
+                    <tr id="silvanoCosme">
+                        <td>Silvano Cosme Soares Pereira</td>
+                        <td>CZB5C39</td>
+                        <td>KIA BONGO</td>
+                    </tr>
+                    <tr id="wellingtonElias">
+                        <td>Wellington Elias dos Santos</td>
+                        <td>EGF3H75</td>
+                        <td>VW 8. 150</td>
+                    </tr>
+                    <tr id="emersonJose">
+                        <td>Emerson José Tavares da Filgueiras</td>
+                        <td>FVO7860</td>
+                        <td>VW/8.160 DRC 4X2</td>
+                    </tr>
+                    <tr id="diallesSouza">
+                        <td>Dialles de Souza</td>
+                        <td>EZL4I31</td>
+                        <td>VW/8.160 DRC 4X2</td>
+                    </tr>
+                    <tr id="alexandreCaleffi">
+                        <td>Alexandre Caleffi Neto</td>
+                        <td>DTC1735</td>
+                        <td>VW/8.150 E DELIVERY</td>
+                    </tr>
+                    <tr id="talvanesMacedo">
+                        <td>Talvanes de Macedo Silva</td>
+                        <td>EZL3F08</td>
+                        <td>EW/9.160 DRC 4X2</td>
+                    </tr>
+                    <tr id="thiagoSilva">
+                        <td>Thiago Silva dos Santos</td>
+                        <td>EMU2816</td>
+                        <td>VW/9.150 E DELIVERY</td>
+                    </tr>
+                    <tr id="jesse">
+                        <td>Jesse de Oliveira Boer</td>
+                        <td>OQY3D30</td>
+                        <td>VW 9.160 DRC 4X2</td>
+                    </tr>
+                    <tr id="carlosAlves">
+                        <td>Carlos Alves de Oliveira</td>
+                        <td>EBG4D01</td>
+                        <td>WOLKS 8-150</td>
+                    </tr>
+                    <tr id="antonioFontenele">
+                        <td>Antônio Fontenele De Sousa</td>
+                        <td>CFY 6B98</td>
+                        <td>Sprint 311</td>
+                    </tr>
+                    <tr id="carlosRenato">
+                        <td>Carlos Renato Rodrigues Campos</td>
+                        <td>LTG6A05</td>
+                        <td>V W 10.160</td>
+                    </tr>
+                    <tr id="andreLuiz">
+                        <td>André Luiz da Silva Assis</td>
+                        <td>DMZ4963</td>
+                        <td>M.BENZ 715 C</td>
+                    </tr>
+                    <tr id="andreFrancisco">
+                        <td>Andre Francisco das Chagas</td>
+                        <td>DJF0D85</td>
+                        <td>VW 8.120 EURO</td>
+                    </tr>
+                    <tr id="hudsonFarley">
+                        <td>Hudson Farley Farias Santos</td>
+                        <td>KQQ7868</td>
+                        <td>VW/8.160 4x2</td>
+                    </tr>
+        </div>
     </div>
 
-    <div id="presidentePrudenteTable" class="cidade-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome do Motorista</th>
-                    <th>Placa do Veículo</th>
-                    <th>Modelo</th>
-                    <th>Cidades</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="pvieira">
-                    <td>Jose Luiz da Silva Vieira</td>
-                    <td>JZV2359</td>
-                    <td>M. BENS 915C</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Presidente Prudente">Presidente Prudente</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="pvalmir">
-                    <td>Valmir Cinezio Bezerro
-                    </td>
-                    <td>EDH1H42</td>
-                    <td>VW 8150</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Presidente Prudente">Presidente Prudente</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="pcassio">
-                    <td>Cassio Haro Campagnollo</td>
-                    <td>HSI5B18</td>
-                    <td>VW 815 E</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Caiuá">Caiuá</option>
-                            <option value="Marabá Paulista">Marabá Paulista</option>
-                            <option value="Piquerobi">Piquerobi</option>
-                            <option value="Presidente Epitácio">Presidente Epitácio</option>
-                            <option value="Presidente Venceslau">Presidente Venceslau</option>
-                            <option value="Ribeirão dos Índios">Ribeirão dos Índios</option>
-                            <option value="Santo Anastácio">Santo Anastácio</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="pdenis">
-                    <td>Denis Antonio de Andrade</td>
-                    <td>GGE8A28</td>
-                    <td>FORD/ CARGO 816 </td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Iepê">Iepê</option>
-                            <option value="João Ramalho">João Ramalho</option>
-                            <option value="Nantes">Nantes</option>
-                            <option value="Rancharia">Rancharia</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="phugles">
-                    <td>Hugues Charles Laval</td>
-                    <td>ARP6598</td>
-                    <td>FORD/ CARGO 815 E</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Alfredo Marcondes">Alfredo Marcondes</option>
-                            <option value="Álvares Machado">Álvares Machado</option>
-                            <option value="Indiana">Indiana</option>
-                            <option value="Santo Expedito">Santo Expedito</option>
-                            <option value="Taciba">Taciba</option>
-                            <option value="Anhumas">Anhumas</option>
-                            <option value="Caiabu">Caiabu</option>
-                            <option value="Pirapozinho">Pirapozinho</option>
-                            <option value="Presidente Bernardes">Presidente Bernardes</option>
-                            <option value="Emilianópolis">Emilianópolis</option>
-                            <option value="Martinópolis">Martinópolis</option>
-                            <option value="Narandiba">Narandiba</option>
-                            <option value="Regente Feijó">Regente Feijó</option>
-                            <option value="Tarabai">Tarabai</option>
-                            <option value="Estrela do Norte">Estrela do Norte</option>
-                            <option value="Sandovalina">Sandovalina</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="pclaudio">
-                    <td>Claudio Henrique Dela Pedra</td>
-                    <td>ARP6598 <br> PEQ4C37 <br> EVU 4266 </td>
-                    <td>FORD/ CARGO 815 <br> VW/ 13.180 <br> FORD/ CARGO 816 S</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Alfredo Marcondes">Alfredo Marcondes</option>
-                            <option value="Álvares Machado">Álvares Machado</option>
-                            <option value="Indiana">Indiana</option>
-                            <option value="Santo Expedito">Santo Expedito</option>
-                            <option value="Taciba">Taciba</option>
-                            <option value="Anhumas">Anhumas</option>
-                            <option value="Caiabu">Caiabu</option>
-                            <option value="Pirapozinho">Pirapozinho</option>
-                            <option value="Presidente Bernardes">Presidente Bernardes</option>
-                            <option value="Emilianópolis">Emilianópolis</option>
-                            <option value="Martinópolis">Martinópolis</option>
-                            <option value="Narandiba">Narandiba</option>
-                            <option value="Regente Feijó">Regente Feijó</option>
-                            <option value="Tarabai">Tarabai</option>
-                            <option value="Estrela do Norte">Estrela do Norte</option>
-                            <option value="Sandovalina">Sandovalina</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="pkleber">
-                    <td>Kleber Aparecido Teodoro</td>
-                    <td>EJC 6394 <br> EVU 4266</td>
-                    <td>VW/8.120 EURO3 <br> FORD/ CARGO 816 S</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Alfredo Marcondes">Alfredo Marcondes</option>
-                            <option value="Álvares Machado">Álvares Machado</option>
-                            <option value="Indiana">Indiana</option>
-                            <option value="Santo Expedito">Santo Expedito</option>
-                            <option value="Taciba">Taciba</option>
-                            <option value="Anhumas">Anhumas</option>
-                            <option value="Caiabu">Caiabu</option>
-                            <option value="Pirapozinho">Pirapozinho</option>
-                            <option value="Presidente Bernardes">Presidente Bernardes</option>
-                            <option value="Emilianópolis">Emilianópolis</option>
-                            <option value="Martinópolis">Martinópolis</option>
-                            <option value="Narandiba">Narandiba</option>
-                            <option value="Regente Feijó">Regente Feijó</option>
-                            <option value="Tarabai">Tarabai</option>
-                            <option value="Estrela do Norte">Estrela do Norte</option>
-                            <option value="Sandovalina">Sandovalina</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="pvagner">
-                    <td>Vagner de moura bezerro</td>
-                    <td>HFB7B79</td>
-                    <td>FORD CARGO 816</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="Alfredo Marcondes">Alfredo Marcondes</option>
-                            <option value="Álvares Machado">Álvares Machado</option>
-                            <option value="Indiana">Indiana</option>
-                            <option value="Santo Expedito">Santo Expedito</option>
-                            <option value="Taciba">Taciba</option>
-                            <option value="Anhumas">Anhumas</option>
-                            <option value="Caiabu">Caiabu</option>
-                            <option value="Pirapozinho">Pirapozinho</option>
-                            <option value="Presidente Bernardes">Presidente Bernardes</option>
-                            <option value="Emilianópolis">Emilianópolis</option>
-                            <option value="Martinópolis">Martinópolis</option>
-                            <option value="Narandiba">Narandiba</option>
-                            <option value="Regente Feijó">Regente Feijó</option>
-                            <option value="Tarabai">Tarabai</option>
-                            <option value="Estrela do Norte">Estrela do Norte</option>
-                            <option value="Sandovalina">Sandovalina</option>
-                        </select>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-    <div id="saoJoseDoRioPretoTable" class="cidade-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome do Motorista</th>
-                    <th>Placa do Veículo</th>
-                    <th>Modelo</th>
-                    <th>Cidades</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="douglas">
-                    <td>Douglas Vicente Rodrigues</td>
-                    <td>LNI2A69</td>
-                    <td>VW/8.120</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="São José R. Preto">São José R. Preto</option>
-                            <option value="Monte Aprazível">Monte Aprazível</option>
-                            <option value="Ipiguá">Ipiguá</option>
-                            <option value="Mirassolândia">Mirassolândia</option>
-                            <option value="Macaubal">Macaubal</option>
-                            <option value="Bálsamo">Bálsamo</option>
-                            <option value="Bady Bassitt">Bady Bassitt</option>
-                            <option value="Catiguá">Catiguá</option>
-                            <option value="Cosmorama">Cosmorama</option>
-                            <option value="Embaúba">Embaúba</option>
-                            <option value="Engenheiro Schmitt">Engenheiro Schmitt</option>
-                            <option value="General Salgado">General Salgado</option>
-                            <option value="Icém">Icém</option>
-                            <option value="Itajobi">Itajobi</option>
-                            <option value="Nhandeara">Nhandeara</option>
-                            <option value="Novais">Novais</option>
-                            <option value="Monte Aprazível">Monte Aprazível</option>
-                            <option value="Mirassolândia">Mirassolândia</option>
-                            <option value="Nipuã">Nipuã</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="helio">
-                    <td>Helio de Souza Guimaraes</td>
-                    <td>AKH4187</td>
-                    <td>MERCEDES BENZ 710</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="São José R. Preto">São José R. Preto</option>
-                            <option value="Monte Aprazível">Monte Aprazível</option>
-                            <option value="Ipiguá">Ipiguá</option>
-                            <option value="Mirassolândia">Mirassolândia</option>
-                            <option value="Macaubal">Macaubal</option>
-                            <option value="Bálsamo">Bálsamo</option>
-                            <option value="Bady Bassitt">Bady Bassitt</option>
-                            <option value="Catiguá">Catiguá</option>
-                            <option value="Cosmorama">Cosmorama</option>
-                            <option value="Embaúba">Embaúba</option>
-                            <option value="Engenheiro Schmitt">Engenheiro Schmitt</option>
-                            <option value="General Salgado">General Salgado</option>
-                            <option value="Icém">Icém</option>
-                            <option value="Itajobi">Itajobi</option>
-                            <option value="Nhandeara">Nhandeara</option>
-                            <option value="Novais">Novais</option>
-                            <option value="Monte Aprazível">Monte Aprazível</option>
-                            <option value="Mirassolândia">Mirassolândia</option>
-                            <option value="Nipuã">Nipuã</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="valdir">
-                    <td>Valdir Simões da Silva</td>
-                    <td>NFG5909</td>
-                    <td>VW 8.150</td>
-                    <td>
-                        <select>
-                            <option value="" disabled selected hidden>Selecione uma cidade</option>
-                            <option value="São José R. Preto">São José R. Preto</option>
-                            <option value="Monte Aprazível">Monte Aprazível</option>
-                            <option value="Ipiguá">Ipiguá</option>
-                            <option value="Mirassolândia">Mirassolândia</option>
-                            <option value="Macaubal">Macaubal</option>
-                            <option value="Bálsamo">Bálsamo</option>
-                            <option value="Bady Bassitt">Bady Bassitt</option>
-                            <option value="Catiguá">Catiguá</option>
-                            <option value="Cosmorama">Cosmorama</option>
-                            <option value="Embaúba">Embaúba</option>
-                            <option value="Engenheiro Schmitt">Engenheiro Schmitt</option>
-                            <option value="General Salgado">General Salgado</option>
-                            <option value="Icém">Icém</option>
-                            <option value="Itajobi">Itajobi</option>
-                            <option value="Nhandeara">Nhandeara</option>
-                            <option value="Novais">Novais</option>
-                            <option value="Monte Aprazível">Monte Aprazível</option>
-                            <option value="Mirassolândia">Mirassolândia</option>
-                            <option value="Nipuã">Nipuã</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr id="edemir">
-                    <td>Edemir Maciel Fuzzaro</td>
-                    <td>GHJ8E00</td>
-                    <td>FORD/CARGO 1119</td>
-                    <td>
-                        <select>
-                            <option disabled selected hidden value="">Selecione uma cidade</option>
-                            <option value="cedral">Cedral</option>
-                            <option value="guapiaçu">Guapiaçu</option>
-                            <option value="Uchoa">Uchoa</option>
-                        </select>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-    <div id="mauaTable" class="cidade-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome do Motorista</th>
-                    <th>Placa do Veículo</th>
-                    <th>Modelo</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr id="hudson">
-                    <td>Hudson Farley Farias Santos</td>
-                    <td>KQQ7868</td>
-                    <td>VW/8.160DARC 4X2</td>
-                </tr>
-
-                <tr id="breno">
-                    <td>Breno Wesley Silva</td>
-                    <td>FQL0999</td>
-                    <td>VW/9.150E CUMMINS</td>
-                </tr>
-
-                <tr id="fabio">
-                    <td>Fabio Fernandes</td>
-                    <td>FQL0999</td>
-                    <td>VW/9.150E CUMMINS</td>
-                </tr>
-
-                <tr id="emerson">
-                    <td>Emerson de Viveiros </td>
-                    <td>BKO3I82</td>
-                    <td>VW/7.90 S</td>
-                </tr>
-
-                <tr id="edson">
-                    <td>Edson de viveiros</td>
-                    <td>DDT5H84</td>
-                    <td>FORD/F250 XL K</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id="tremembeTable" class="cidade-table">
-        <table id="tabela">
-            <thead>
-                <tr>
-                    <th>Nome do Motorista</th>
-                    <th>Placa do Veículo</th>
-                    <th>Modelo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="ruan">
-                    <td>Ruan Fernandes Barbosa</td>
-                    <td>ISF7I61 <br> EHH9G74</td>
-                    <td>VW/8.150 <br> IVECO/ DAILY 35S14 CS</td>
-                </tr>
-
-                <tr id="anderderson">
-                    <td>Anderson Aparecido de Souza</td>
-                    <td>BOO0683</td>
-                    <td>VW/8.140</td>
-                </tr>
-
-                <tr id="joseCarlos">
-                    <td>Jose Carlos Alves Gouvea</td>
-                    <td>FUI2H91</td>
-                    <td>VW/9 150 E DELIVERY</td>
-                </tr>
-
-                <tr id="aparecidoMaioral">
-                    <td>Aparecido Maioral</td>
-                    <td>GXH7C28</td>
-                    <td>M.BENZ/712 C</td>
-                </tr>
-
-                <tr id="helioAndreza">
-                    <td>Helio Andreza</td>
-                    <td>CYB3I48</td>
-                    <td>M.BENZ/L 608 D</td>
-                </tr>
-
-                <tr id="olavoPirez">
-                    <td>Olavo Pires Basilio</td>
-                    <td>ESU3335</td>
-                    <td>VW/9 .160 DRC 4X2</td>
-                </tr>
-
-                <tr id="vladmirRodrigues">
-                    <td>Vladimir Rodrigues</td>
-                    <td>EMU3467</td>
-                    <td>FORD/CARGO 816 S</td>
-                </tr>
-
-                <tr id="reffersonRamos">
-                    <td>Refferson Roberto Ramos</td>
-                    <td>FDF0999</td>
-                    <td>VW/8.120 EURO 3</td>
-                </tr>
-
-                <tr id="joseRoberto">
-                    <td>Jose Roberto Tecio</td>
-                    <td>GOT2386</td>
-                    <td>VW/6.90</td>
-                </tr>
-
-                <tr id="silvanoCosme">
-                    <td>Silvano Cosme Soares Pereira</td>
-                    <td>CZB5C39</td>
-                    <td>KIA BONGO</td>
-                </tr>
-
-                <tr id="wellingtonElias">
-                    <td>Wellington Elias dos Santos</td>
-                    <td>EGF3H75</td>
-                    <td>VW 8. 150</td>
-                </tr>
-
-                <tr id="emersonJose">
-                    <td>Emerson José Tavares da Filgueiras</td>
-                    <td>FVO7860</td>
-                    <td>VW/8.160 DRC 4X2</td>
-                </tr>
-
-                <tr id="diallesSouza">
-                    <td>Dialles de Souza</td>
-                    <td>EZL4I31</td>
-                    <td>VW/8.160 DRC 4X2</td>
-                </tr>
-
-                <tr id="alexandreCaleffi">
-                    <td>Alexandre Caleffi Neto</td>
-                    <td>DTC1735</td>
-                    <td>VW/8.150 E DELIVERY</td>
-                </tr>
-
-                <tr id="alissonTadeu">
-                    <td>Alisson Tadeu Zanforlin</td>
-                    <td>DWP5E20</td>
-                    <td>HYUNDAI/HR HDB</td>
-                </tr>
-
-                <tr id="talvanesMacedo">
-                    <td>Talvanes de Macedo Silva</td>
-                    <td>EZL3F08</td>
-                    <td>EW/9.160 DRC 4X2</td>
-                </tr>
-
-                <tr id="thiagoFernando">
-                    <td>Thiago Fernando dos Santos</td>
-                    <td>KQU9I87</td>
-                    <td>Mercedes sprinter</td>
-                </tr>
-
-                <tr id="thiagoSilva">
-                    <td>Thiago Silva dos Santos</td>
-                    <td>EMU2816</td>
-                    <td>VW/9.150 E DELIVERY</td>
-                </tr>
-
-                <tr id="jesse">
-                    <td>Jesse de Oliveira Boer</td>
-                    <td>OQY3D30</td>
-                    <td>VW 9.160 DRC 4X2</td>
-                </tr>
-
-                <tr id="carlosAlves">
-                    <td>Carlos Alves de Oliveira</td>
-                    <td>EBG4D01</td>
-                    <td>WOLKS 8-150</td>
-                </tr>
-
-                <tr id="antonioFontenele">
-                    <td>Antônio Fontenele De Sousa</td>
-                    <td>CFY 6B98</td>
-                    <td>Sprint 311</td>
-                </tr>
-
-                <tr id="cassianoMoreira">
-                    <td>Cassiano Moreira</td>
-                    <td>DPF8B07</td>
-                    <td>850 DELIVERY</td>
-                </tr>
-
-                <tr id="carlosRenato">
-                    <td>Carlos Renato Rodrigues Campos</td>
-                    <td>LTG6A05</td>
-                    <td>V W 10.160</td>
-                </tr>
-
-                <tr id="andreLuiz">
-                    <td>André Luiz da Silva Assis</td>
-                    <td>DMZ4963</td>
-                    <td>M.BENZ 715 C</td>
-                </tr>
-
-                <tr id="andreFrancisco">
-                    <td>Andre Francisco das Chagas</td>
-                    <td>DJF0D85</td>
-                    <td>VW 8.120 EURO</td>
-                </tr>
-
-                <tr id="hudsonFarley">
-                    <td>Hudson Farley Farias Santos</td>
-                    <td>KQQ7868</td>
-                    <td>VW/8.160 4x2</td>
-                </tr>
-
-                <tr id="joaoVieira">
-                    <td>João Vieira</td>
-                    <td>DTA1790</td>
-                    <td>VW8. 120</td>
-                </tr>
-
-
-    </div>
 
 
     <script>
