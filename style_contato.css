@@ -118,9 +118,13 @@ main table tbody tr:hover {
         }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
     #div_tabela {
     overflow-x: scroll;
+    }
+    #menu ul {
+        display: flex;
+        flex-direction:column;
     }
 }
 
