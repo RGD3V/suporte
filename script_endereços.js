@@ -347,3 +347,203 @@
                                                                 // Pode exibir uma mensagem ou fazer outras ações após a cópia
                                                                 alert('ENDEREÇO COPIADO!');
                                                             }
+
+
+                                                                document.getElementById('copyTextPrudente').addEventListener('click', function() {
+                                                                    copyToClipboard('Rodovia Assis Chateaubriand Sp 425, Km 459 - Em frente ao águia da PM. https://goo.gl/maps/xtSSKJiV4do8pi1y8');
+                                                                });
+                                    
+                                                                function copyToClipboard(text) {
+                                                                    var textArea = document.createElement('textarea');
+                                                                    textArea.value = text;
+                                    
+                                                                    // Adiciona o elemento ao corpo do documento
+                                                                    document.body.appendChild(textArea);
+                                    
+                                                                    // Seleciona o conteúdo do textarea
+                                                                    textArea.select();
+                                    
+                                                                    // Executa o comando de cópia
+                                                                    document.execCommand('copy');
+                                    
+                                                                    // Remove o textarea do documento
+                                                                    document.body.removeChild(textArea);
+                                    
+                                                                    // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                    alert('ENDEREÇO COPIADO!');
+                                                                }
+
+
+                                                                    document.getElementById('copyTextBolsao').addEventListener('click', function() {
+                                                                        copyToClipboard('Rodovia Orlando Quagliato, Km 10 - Em frente ao motel Vila Verde. https://goo.gl/maps/ktqKciLhasPLqdGS9');
+                                                                    });
+                                        
+                                                                    function copyToClipboard(text) {
+                                                                        var textArea = document.createElement('textarea');
+                                                                        textArea.value = text;
+                                        
+                                                                        // Adiciona o elemento ao corpo do documento
+                                                                        document.body.appendChild(textArea);
+                                        
+                                                                        // Seleciona o conteúdo do textarea
+                                                                        textArea.select();
+                                        
+                                                                        // Executa o comando de cópia
+                                                                        document.execCommand('copy');
+                                        
+                                                                        // Remove o textarea do documento
+                                                                        document.body.removeChild(textArea);
+                                        
+                                                                        // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                        alert('ENDEREÇO COPIADO!');
+                                                                    }
+
+
+                                                                        document.getElementById('copyTextSantana').addEventListener('click', function() {
+                                                                            copyToClipboard('Rodovia Elzirio Martins Km 1/5, S/N. CENTRO. https://maps.app.goo.gl/9j89ZXf4Jc4iku6M6');
+                                                                        });
+                                            
+                                                                        function copyToClipboard(text) {
+                                                                            var textArea = document.createElement('textarea');
+                                                                            textArea.value = text;
+                                            
+                                                                            // Adiciona o elemento ao corpo do documento
+                                                                            document.body.appendChild(textArea);
+                                            
+                                                                            // Seleciona o conteúdo do textarea
+                                                                            textArea.select();
+                                            
+                                                                            // Executa o comando de cópia
+                                                                            document.execCommand('copy');
+                                            
+                                                                            // Remove o textarea do documento
+                                                                            document.body.removeChild(textArea);
+                                            
+                                                                            // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                            alert('ENDEREÇO COPIADO!');
+                                                                        }
+
+
+                                                                            document.getElementById('copyTextRioPreto').addEventListener('click', function() {
+                                                                                copyToClipboard('Rua Felipe Assad Karam, 300 - Estância Jockey Clube. https://goo.gl/maps/2BgyjV8HkrN73HoL8');
+                                                                            });
+                                                
+                                                                            function copyToClipboard(text) {
+                                                                                var textArea = document.createElement('textarea');
+                                                                                textArea.value = text;
+                                                
+                                                                                // Adiciona o elemento ao corpo do documento
+                                                                                document.body.appendChild(textArea);
+                                                
+                                                                                // Seleciona o conteúdo do textarea
+                                                                                textArea.select();
+                                                
+                                                                                // Executa o comando de cópia
+                                                                                document.execCommand('copy');
+                                                
+                                                                                // Remove o textarea do documento
+                                                                                document.body.removeChild(textArea);
+                                                
+                                                                                // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                                alert('ENDEREÇO COPIADO!');
+                                                                            }
+
+
+                                                                                document.getElementById('copyTextSorocaba').addEventListener('click', function() {
+                                                                                    copyToClipboard('Estrada Ferroviário João De Oliveira, 100. Bairro Ipanema Das Pedras. https://goo.gl/maps/XBMws1WLEZjDGhvk8');
+                                                                                });
+                                                    
+                                                                                function copyToClipboard(text) {
+                                                                                    var textArea = document.createElement('textarea');
+                                                                                    textArea.value = text;
+                                                    
+                                                                                    // Adiciona o elemento ao corpo do documento
+                                                                                    document.body.appendChild(textArea);
+                                                    
+                                                                                    // Seleciona o conteúdo do textarea
+                                                                                    textArea.select();
+                                                    
+                                                                                    // Executa o comando de cópia
+                                                                                    document.execCommand('copy');
+                                                    
+                                                                                    // Remove o textarea do documento
+                                                                                    document.body.removeChild(textArea);
+                                                    
+                                                                                    // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                                    alert('ENDEREÇO COPIADO!');
+                                                                                }
+
+
+                                                                                    document.getElementById('copyTextTremembe').addEventListener('click', function() {
+                                                                                        copyToClipboard('Estrada Três Cruzes, 718 - Bairro Tremembé. https://goo.gl/maps/y6iB2FZE9vNUfeqM9');
+                                                                                    });
+                                                        
+                                                                                    function copyToClipboard(text) {
+                                                                                        var textArea = document.createElement('textarea');
+                                                                                        textArea.value = text;
+                                                        
+                                                                                        // Adiciona o elemento ao corpo do documento
+                                                                                        document.body.appendChild(textArea);
+                                                        
+                                                                                        // Seleciona o conteúdo do textarea
+                                                                                        textArea.select();
+                                                        
+                                                                                        // Executa o comando de cópia
+                                                                                        document.execCommand('copy');
+                                                        
+                                                                                        // Remove o textarea do documento
+                                                                                        document.body.removeChild(textArea);
+                                                        
+                                                                                        // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                                        alert('ENDEREÇO COPIADO!');
+                                                                                    }
+
+
+                                                                                        document.getElementById('copyTextTeodoro').addEventListener('click', function() {
+                                                                                            copyToClipboard('Rodovia Arlindo Betio, km 01. - https://maps.app.goo.gl/sm2gX9q8dFbXJsbi6');
+                                                                                        });
+                                                            
+                                                                                        function copyToClipboard(text) {
+                                                                                            var textArea = document.createElement('textarea');
+                                                                                            textArea.value = text;
+                                                            
+                                                                                            // Adiciona o elemento ao corpo do documento
+                                                                                            document.body.appendChild(textArea);
+                                                            
+                                                                                            // Seleciona o conteúdo do textarea
+                                                                                            textArea.select();
+                                                            
+                                                                                            // Executa o comando de cópia
+                                                                                            document.execCommand('copy');
+                                                            
+                                                                                            // Remove o textarea do documento
+                                                                                            document.body.removeChild(textArea);
+                                                            
+                                                                                            // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                                            alert('ENDEREÇO COPIADO!');
+                                                                                        }
+
+
+                                                                                            document.getElementById('copyTextUbatuba').addEventListener('click', function() {
+                                                                                                copyToClipboard('Estrada Monte Valério, 2300 - 300 mt após o campo de futebol. https://maps.app.goo.gl/Ug8SUDpuTon6SRzQ8');
+                                                                                            });
+                                                                
+                                                                                            function copyToClipboard(text) {
+                                                                                                var textArea = document.createElement('textarea');
+                                                                                                textArea.value = text;
+                                                                
+                                                                                                // Adiciona o elemento ao corpo do documento
+                                                                                                document.body.appendChild(textArea);
+                                                                
+                                                                                                // Seleciona o conteúdo do textarea
+                                                                                                textArea.select();
+                                                                
+                                                                                                // Executa o comando de cópia
+                                                                                                document.execCommand('copy');
+                                                                
+                                                                                                // Remove o textarea do documento
+                                                                                                document.body.removeChild(textArea);
+                                                                
+                                                                                                // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                                                alert('ENDEREÇO COPIADO!');
+                                                                                            }
