@@ -12,7 +12,7 @@ html {
 
 body main {
     height: 100%;
-    background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+    background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
     padding-top: 100px;
 }
 
@@ -121,10 +121,6 @@ main table tbody tr:hover {
 @media (max-width: 1080px) {
     #div_tabela {
     overflow-x: scroll;
-    }
-    #menu ul {
-        display: flex;
-        flex-direction:column;
     }
 }
 
