@@ -13,7 +13,7 @@ body{
 
 label{
     display: inline-block;
-    padding: 5px;
+    padding: 4px;
     background-color: #ebab62;
     border-radius: 7px 0px 0px 7px;
 }
@@ -43,9 +43,9 @@ form{
     margin-top: 30px;
 }
 
-select:hover option {
+/* select:hover option {
     background-color: #fda500;
-}
+} */
 
 a{
     text-decoration: none;
