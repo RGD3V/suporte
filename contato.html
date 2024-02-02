@@ -39,8 +39,7 @@
                 <tbody>
                     <tr>
                         <td>Antigo patio Detran</td>
-                        <td><a class="href_whats" href="https://web.whatsapp.com/send?phone=5514997784610"
-                                target="_blank">(14)99778-4610</a></td>
+                        <td><a class="href_whats" href="javascript:void(0);" onclick="abrirWhatsapp('https://web.whatsapp.com/send?phone=5514997784610', 'whatsapp://send?phone=5514997784610')" target="_blank">(14)99778-4610</a></td>
                         <td>x</td>
                         <td>Não possuí</td>
                         <td>André <a class="href_whats" href="https://web.whatsapp.com/send?phone=5514997889002"
@@ -395,6 +394,17 @@
             </table>
         </div>
     </main>
+    <script>
+        function abrirWhatsapp(linkWeb, linkApp) {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                window.location.href = linkApp;
+            } else {
+                window.open(linkWeb, '_blank');
+            }
+        }
+    </script>
 
 </body>
 
