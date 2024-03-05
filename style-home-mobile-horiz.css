@@ -16,7 +16,7 @@
         background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 100px;
+        padding-top: 125px;
     }
 
     body header span#menuBurguer { display: none; }
