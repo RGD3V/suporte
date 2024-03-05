@@ -21,10 +21,12 @@
     }
 
     body header nav#menu {
-        display: block;
+        display: none;
         text-align: center;
         background-color: #f18407;
     }
+
+    body header nav#menu ul { display: none;}
 
         body header nav#menu ul li {
             background-color: orangered;
