@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@media screen and (min-width: 1280px) { 
 
 * {
     padding: 0px;
@@ -20,6 +21,7 @@ body main {
 }
 
 #menu {
+    display: none;
     background-color: #f18407;
     position: fixed;
     top: 0;
@@ -71,3 +73,5 @@ footer p a {
 }
 
 footer p a:hover {color: black;}
+
+}
