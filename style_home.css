@@ -20,6 +20,8 @@ body main {
     margin: auto;
 }
 
+body header span#menuBurguer { display: none; }
+
 #menu {
     display: none;
     background-color: #f18407;

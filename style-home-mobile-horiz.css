@@ -18,6 +18,8 @@
         background-attachment: fixed;
         padding-top: 100px;
     }
+
+    body header span#menuBurguer { display: none; }
     
     #home_img {
         display: block;
