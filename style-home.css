@@ -5,6 +5,8 @@
         margin: 0px;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    html { background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62); }
     
     body main {
         height: calc(100vh - 128px);
