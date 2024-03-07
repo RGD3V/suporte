@@ -1,4 +1,17 @@
 
+function clickMenu() {
+    if (menu.style.display == `block`) {
+        menu.style.display = `none`
+    } else { menu.style.display = `block` }
+}
+
+function resize() { 
+    if (window.innerWidth >= 768) {
+        menu.style.display = `none`
+    } else { menu.style.display = `block` }
+}
+        
+        
         document.getElementById('copyTextAgudos').addEventListener('click', function() {
             copyToClipboard('R. Aparecida do Norte, 90 - Vila Honorina. CEP: 17120-000 https://goo.gl/maps/XpYpQcteLaLxLVoL9');
         });

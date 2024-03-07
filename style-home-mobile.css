@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     * {
         padding: 0px;
         margin: 0px;
@@ -19,9 +19,8 @@
         display: block;
         text-align: center;
         background-color: orangered;
-        padding: 3px;
-        margin: 2px;
-        border-radius: 5px;
+        padding: 10px;
+        margin: 3pxpx;
     }
 
     header nav#menu {
@@ -32,8 +31,8 @@
 
         body header nav#menu ul li {
             background-color: orangered;
-            padding: 3px;
-            margin: 2px;
+            padding: 10px;
+            margin: 5px;
             border-radius: 5px;
         }
 

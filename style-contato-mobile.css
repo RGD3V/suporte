@@ -1,7 +1,6 @@
 @charset "UTF-8";
-@media screen and (min-width: 1280px) {
+@media (max-width: 1024px) {
     
-
 * {
     padding: 0px;
     margin: 0px;
@@ -9,7 +8,7 @@
 }
 
 html {
-    background-color: #ebab62;
+    background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
 }
 
 body main {
@@ -18,44 +17,43 @@ body main {
     padding-top: 100px;
 }
 
-#menu {
-    background-color: #f18407;
-    top: 0;
-    width: 100%;
-    margin: 0px;
-    position: fixed;
-}
-
-#menu ul {
-    text-align: center;
-    list-style: none;
-    padding: 10px;
-    margin: 0px;
-    margin-top: 20px;
-}
-
-#menu ul li {
-    display:inline;
-    margin-right: 0px;
-    padding: 10px;
-    padding-bottom: 10px;
-}
-
-#menu ul li a {
-    text-decoration: none;
-    background-color: orangered;
+body header span#menuBurguer {
     color: white;
-    box-shadow: 0px 0px 5px rgb(63, 63, 63);
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    display: block;
+    text-align: center;
+    background-color: orangered;
+    padding: 10px;
 }
 
-#menu ul li a:hover {
-    background-color: white;
-    color: orangered;
+header nav#menu {
+    display: none;
+    text-align: center;
+    background-color: #f18407;
 }
+
+    body header nav#menu ul li {
+        background-color: orangered;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+        body header nav#menu ul li a {
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+            body header nav#menu ul li a:hover {
+                color: orangered;
+                background-color: white;
+            }  
 
 #div_tabela {
     background-color: rgb(255, 255, 255);
@@ -119,11 +117,10 @@ main table tbody tr:hover {
             
         }
 
-
-@media (max-width: 1080px) {
-    #div_tabela {
-    overflow-x: scroll;
-    }
-}
+        @media (max-width: 1080px) {
+            #div_tabela {
+            overflow-x: scroll;
+            }
+        }
 
 }
