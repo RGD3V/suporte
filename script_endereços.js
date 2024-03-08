@@ -461,6 +461,30 @@ function resize() {
                                                                                 alert('ENDEREÇO COPIADO!');
                                                                             }
 
+                                                                            document.getElementById('copyTextSaoVicente').addEventListener('click', function() {
+                                                                                copyToClipboard('Av. Martins Fontes nº1118. https://maps.app.goo.gl/DuG7De2nVsdbpAWdA');
+                                                                            });
+                                                
+                                                                            function copyToClipboard(text) {
+                                                                                var textArea = document.createElement('textarea');
+                                                                                textArea.value = text;
+                                                
+                                                                                // Adiciona o elemento ao corpo do documento
+                                                                                document.body.appendChild(textArea);
+                                                
+                                                                                // Seleciona o conteúdo do textarea
+                                                                                textArea.select();
+                                                
+                                                                                // Executa o comando de cópia
+                                                                                document.execCommand('copy');
+                                                
+                                                                                // Remove o textarea do documento
+                                                                                document.body.removeChild(textArea);
+                                                
+                                                                                // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                                alert('ENDEREÇO COPIADO!');
+                                                                            }
+
 
                                                                                 document.getElementById('copyTextSorocaba').addEventListener('click', function() {
                                                                                     copyToClipboard('Estrada Ferroviário João De Oliveira, 100. Bairro Ipanema Das Pedras. https://goo.gl/maps/XBMws1WLEZjDGhvk8');
