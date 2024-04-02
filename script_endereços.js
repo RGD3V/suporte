@@ -211,6 +211,30 @@ function resize() {
                                         alert('ENDEREÇO COPIADO!');
                                     }
 
+                                    document.getElementById('copyTextFazenda').addEventListener('click', function() {
+                                        copyToClipboard('Av. das Américas, 2451 - Nações. https://maps.app.goo.gl/CAXT5mH3e8GGkfDWA');
+                                    });
+        
+                                    function copyToClipboard(text) {
+                                        var textArea = document.createElement('textarea');
+                                        textArea.value = text;
+        
+                                        // Adiciona o elemento ao corpo do documento
+                                        document.body.appendChild(textArea);
+        
+                                        // Seleciona o conteúdo do textarea
+                                        textArea.select();
+        
+                                        // Executa o comando de cópia
+                                        document.execCommand('copy');
+        
+                                        // Remove o textarea do documento
+                                        document.body.removeChild(textArea);
+        
+                                        // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                        alert('ENDEREÇO COPIADO!');
+                                    }
+
 
                                         document.getElementById('copyTextGuararapes').addEventListener('click', function() {
                                             copyToClipboard('Estrada Vicinal Natal Scatolin, S/N. Km 04 - Corrego Nascente. https://goo.gl/maps/uCSchwDjTZ5rFw3a9');
@@ -386,6 +410,29 @@ function resize() {
                                                                     alert('ENDEREÇO COPIADO!');
                                                                 }
 
+                                                                document.getElementById('copyTextPirassununga').addEventListener('click', function() {
+                                                                    copyToClipboard('R. Joaquim Alves da Silva, 336 - Vila Urupes https://maps.app.goo.gl/sieX3mKQhiAo8zhu5');
+                                                                });
+                                    
+                                                                function copyToClipboard(text) {
+                                                                    var textArea = document.createElement('textarea');
+                                                                    textArea.value = text;
+                                    
+                                                                    // Adiciona o elemento ao corpo do documento
+                                                                    document.body.appendChild(textArea);
+                                    
+                                                                    // Seleciona o conteúdo do textarea
+                                                                    textArea.select();
+                                    
+                                                                    // Executa o comando de cópia
+                                                                    document.execCommand('copy');
+                                    
+                                                                    // Remove o textarea do documento
+                                                                    document.body.removeChild(textArea);
+                                    
+                                                                    // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                    alert('ENDEREÇO COPIADO!');
+                                                                }
 
                                                                     document.getElementById('copyTextBolsao').addEventListener('click', function() {
                                                                         copyToClipboard('Rodovia Orlando Quagliato, Km 10 - Em frente ao motel Vila Verde. https://goo.gl/maps/ktqKciLhasPLqdGS9');
@@ -485,6 +532,29 @@ function resize() {
                                                                                 alert('ENDEREÇO COPIADO!');
                                                                             }
 
+                                                                            document.getElementById('copyTextSerrana').addEventListener('click', function() {
+                                                                                copyToClipboard('Rua Maranhão, 25 https://maps.app.goo.gl/ArCwUoB7LSy8ywgq8');
+                                                                            });
+                                                
+                                                                            function copyToClipboard(text) {
+                                                                                var textArea = document.createElement('textarea');
+                                                                                textArea.value = text;
+                                                
+                                                                                // Adiciona o elemento ao corpo do documento
+                                                                                document.body.appendChild(textArea);
+                                                
+                                                                                // Seleciona o conteúdo do textarea
+                                                                                textArea.select();
+                                                
+                                                                                // Executa o comando de cópia
+                                                                                document.execCommand('copy');
+                                                
+                                                                                // Remove o textarea do documento
+                                                                                document.body.removeChild(textArea);
+                                                
+                                                                                // Pode exibir uma mensagem ou fazer outras ações após a cópia
+                                                                                alert('ENDEREÇO COPIADO!');
+                                                                            }
 
                                                                                 document.getElementById('copyTextSorocaba').addEventListener('click', function() {
                                                                                     copyToClipboard('Estrada Ferroviário João De Oliveira, 100. Bairro Ipanema Das Pedras. https://goo.gl/maps/XBMws1WLEZjDGhvk8');
