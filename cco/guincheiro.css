@@ -88,12 +88,17 @@ th:nth-child(2) {
 
 td:nth-child(3),
 th:nth-child(3) {
-    width: 210px;
+    width: 100px;
 }
 
 td:nth-child(4),
 th:nth-child(4) {
     width: 205px;
+}
+
+td:nth-child(5),
+th:nth-child(5) {
+    width: 100px;
 }
 
 
