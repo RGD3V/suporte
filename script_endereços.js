@@ -38,7 +38,7 @@ function resize() {
 
 
             document.getElementById('copyTextAraraquara').addEventListener('click', function() {
-                copyToClipboard('Av. Dr. Waldomiro Blundi, 54. CEP: 14807-422 https://goo.gl/maps/BoYbmgBNwgDmtyeK6');
+                copyToClipboard('Av. Dr. Waldomiro Blundi, 54. CEP: 14807-422 https://maps.app.goo.gl/VkzdRejp6KS4Uxaw8');
             });
 
             function copyToClipboard(text) {
@@ -88,7 +88,7 @@ function resize() {
 
 
                     document.getElementById('copyTextBarretos').addEventListener('click', function() {
-                        copyToClipboard('Rua Altair Do Nascimento, 850. CEP: 14783-152 https://goo.gl/maps/eJSRbVytyUsfjARXA');
+                        copyToClipboard('Rua Altair Do Nascimento, 850. CEP: 14783-152 https://maps.app.goo.gl/cnC8Mk346ZVRAWZg8');
                     });
 
                     function copyToClipboard(text) {
@@ -113,7 +113,7 @@ function resize() {
 
 
                         document.getElementById('copyTextBotucatu').addEventListener('click', function() {
-                            copyToClipboard('Avenida Das Hortências, 1703. CEP: 18065-258 https://goo.gl/maps/8DXA3Buy2xxngmTk6');
+                            copyToClipboard('Avenida Das Hortências, 1703. CEP: 18065-258 https://maps.app.goo.gl/nCR5UbxJm1wWQ5He7');
                         });
 
                         function copyToClipboard(text) {
@@ -136,34 +136,9 @@ function resize() {
                             alert('ENDEREÇO COPIADO!');
                         }
 
-
-                            document.getElementById('copyTextBotucatu').addEventListener('click', function() {
-                                copyToClipboard('Avenida Das Hortências, 1703. CEP: 18065-258 https://goo.gl/maps/8DXA3Buy2xxngmTk6');
-                            });
-
-                            function copyToClipboard(text) {
-                                var textArea = document.createElement('textarea');
-                                textArea.value = text;
-
-                                // Adiciona o elemento ao corpo do documento
-                                document.body.appendChild(textArea);
-
-                                // Seleciona o conteúdo do textarea
-                                textArea.select();
-
-                                // Executa o comando de cópia
-                                document.execCommand('copy');
-
-                                // Remove o textarea do documento
-                                document.body.removeChild(textArea);
-
-                                // Pode exibir uma mensagem ou fazer outras ações após a cópia
-                                alert('ENDEREÇO COPIADO!');
-                            }
-
                             
                                 document.getElementById('copyTextCaraguatatuba').addEventListener('click', function() {
-                                    copyToClipboard('Rua Felix Jonas Amorim, 22. Próximo à policia rodoviária Tamoios https://maps.app.goo.gl/apRDtboUpdPSZdTz6');
+                                    copyToClipboard('Rua Aríetes, 100. Próximo à policia rodoviária Tamoios https://maps.app.goo.gl/uJH3cYCjRFRAMU8E8');
                                 });
 
                                 function copyToClipboard(text) {
@@ -189,30 +164,6 @@ function resize() {
 
                                     document.getElementById('copyTextCerqueira').addEventListener('click', function() {
                                         copyToClipboard('Avenida João Cardoso de Oliveira, 870 - Centro. https://goo.gl/maps/hoRjHjehcePnUsuJA');
-                                    });
-        
-                                    function copyToClipboard(text) {
-                                        var textArea = document.createElement('textarea');
-                                        textArea.value = text;
-        
-                                        // Adiciona o elemento ao corpo do documento
-                                        document.body.appendChild(textArea);
-        
-                                        // Seleciona o conteúdo do textarea
-                                        textArea.select();
-        
-                                        // Executa o comando de cópia
-                                        document.execCommand('copy');
-        
-                                        // Remove o textarea do documento
-                                        document.body.removeChild(textArea);
-        
-                                        // Pode exibir uma mensagem ou fazer outras ações após a cópia
-                                        alert('ENDEREÇO COPIADO!');
-                                    }
-
-                                    document.getElementById('copyTextFazenda').addEventListener('click', function() {
-                                        copyToClipboard('Av. das Américas, 2451 - Nações. https://maps.app.goo.gl/CAXT5mH3e8GGkfDWA');
                                     });
         
                                     function copyToClipboard(text) {
@@ -262,7 +213,7 @@ function resize() {
 
 
                                             document.getElementById('copyTextJau').addEventListener('click', function() {
-                                                copyToClipboard('Av. Lourenço Neto De Almeida Prado, 1031 - Atrás do Território do Calçado. https://goo.gl/maps/sQncvsrvqdue4z6o6');
+                                                copyToClipboard('Av. Lourenço Neto De Almeida Prado, 1031 - Atrás do Território do Calçado. https://maps.app.goo.gl/xEGFfAuAGbShf8En7');
                                             });
                 
                                             function copyToClipboard(text) {
@@ -336,31 +287,6 @@ function resize() {
                                                     }
 
 
-                                                        document.getElementById('copyTextMirassol').addEventListener('click', function() {
-                                                            copyToClipboard('Av. Airton José Bilachi, 3965 - Próximo ao laboratório de alimentos Intertek Brasil. https://goo.gl/maps/8ChdzQtKAxVAKsHm7');
-                                                        });
-                            
-                                                        function copyToClipboard(text) {
-                                                            var textArea = document.createElement('textarea');
-                                                            textArea.value = text;
-                            
-                                                            // Adiciona o elemento ao corpo do documento
-                                                            document.body.appendChild(textArea);
-                            
-                                                            // Seleciona o conteúdo do textarea
-                                                            textArea.select();
-                            
-                                                            // Executa o comando de cópia
-                                                            document.execCommand('copy');
-                            
-                                                            // Remove o textarea do documento
-                                                            document.body.removeChild(textArea);
-                            
-                                                            // Pode exibir uma mensagem ou fazer outras ações após a cópia
-                                                            alert('ENDEREÇO COPIADO!');
-                                                        }
-
-
                                                             document.getElementById('copyTextOurinhos').addEventListener('click', function() {
                                                                 copyToClipboard('Rua Mario de Oliveira Branco, 150 - Atras da Ouribram. https://goo.gl/maps/dzt6AecAoQnq99PW9');
                                                             });
@@ -410,32 +336,9 @@ function resize() {
                                                                     alert('ENDEREÇO COPIADO!');
                                                                 }
 
-                                                                document.getElementById('copyTextPirassununga').addEventListener('click', function() {
-                                                                    copyToClipboard('R. Joaquim Alves da Silva, 336 - Vila Urupes https://maps.app.goo.gl/sieX3mKQhiAo8zhu5');
-                                                                });
-                                    
-                                                                function copyToClipboard(text) {
-                                                                    var textArea = document.createElement('textarea');
-                                                                    textArea.value = text;
-                                    
-                                                                    // Adiciona o elemento ao corpo do documento
-                                                                    document.body.appendChild(textArea);
-                                    
-                                                                    // Seleciona o conteúdo do textarea
-                                                                    textArea.select();
-                                    
-                                                                    // Executa o comando de cópia
-                                                                    document.execCommand('copy');
-                                    
-                                                                    // Remove o textarea do documento
-                                                                    document.body.removeChild(textArea);
-                                    
-                                                                    // Pode exibir uma mensagem ou fazer outras ações após a cópia
-                                                                    alert('ENDEREÇO COPIADO!');
-                                                                }
 
                                                                     document.getElementById('copyTextBolsao').addEventListener('click', function() {
-                                                                        copyToClipboard('Rodovia Orlando Quagliato, Km 10 - Em frente ao motel Vila Verde. https://goo.gl/maps/ktqKciLhasPLqdGS9');
+                                                                        copyToClipboard('Rodovia Orlando Quagliato, Km 10 - Em frente ao motel Vila Verde. https://maps.app.goo.gl/8ZshLEF8oa1CTcNd8');
                                                                     });
                                         
                                                                     function copyToClipboard(text) {
@@ -485,7 +388,7 @@ function resize() {
 
 
                                                                             document.getElementById('copyTextRioPreto').addEventListener('click', function() {
-                                                                                copyToClipboard('Rua Felipe Assad Karam, 300 - Estância Jockey Clube. https://goo.gl/maps/2BgyjV8HkrN73HoL8');
+                                                                                copyToClipboard('Rua Felipe Assad Karam, 300 - Estância Jockey Clube. https://maps.app.goo.gl/kXvp1iL2ae3Wkz9H8');
                                                                             });
                                                 
                                                                             function copyToClipboard(text) {
@@ -532,29 +435,6 @@ function resize() {
                                                                                 alert('ENDEREÇO COPIADO!');
                                                                             }
 
-                                                                            document.getElementById('copyTextSerrana').addEventListener('click', function() {
-                                                                                copyToClipboard('Rua Maranhão, 25 https://maps.app.goo.gl/ArCwUoB7LSy8ywgq8');
-                                                                            });
-                                                
-                                                                            function copyToClipboard(text) {
-                                                                                var textArea = document.createElement('textarea');
-                                                                                textArea.value = text;
-                                                
-                                                                                // Adiciona o elemento ao corpo do documento
-                                                                                document.body.appendChild(textArea);
-                                                
-                                                                                // Seleciona o conteúdo do textarea
-                                                                                textArea.select();
-                                                
-                                                                                // Executa o comando de cópia
-                                                                                document.execCommand('copy');
-                                                
-                                                                                // Remove o textarea do documento
-                                                                                document.body.removeChild(textArea);
-                                                
-                                                                                // Pode exibir uma mensagem ou fazer outras ações após a cópia
-                                                                                alert('ENDEREÇO COPIADO!');
-                                                                            }
 
                                                                                 document.getElementById('copyTextSorocaba').addEventListener('click', function() {
                                                                                     copyToClipboard('Estrada Ferroviário João De Oliveira, 100. Bairro Ipanema Das Pedras. https://goo.gl/maps/XBMws1WLEZjDGhvk8');
@@ -582,7 +462,7 @@ function resize() {
 
 
                                                                                     document.getElementById('copyTextTremembe').addEventListener('click', function() {
-                                                                                        copyToClipboard('Estrada Três Cruzes, 718 - Bairro Tremembé. https://goo.gl/maps/y6iB2FZE9vNUfeqM9');
+                                                                                        copyToClipboard('Estrada Três Cruzes, 718 - Bairro Tremembé. https://maps.app.goo.gl/wGZUX5ZWRpzWNbJP8');
                                                                                     });
                                                         
                                                                                     function copyToClipboard(text) {
