@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: calc(100vh - 128px);
+    background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#tabela {
+    margin-bottom: 15px;
+}
+
+label{
+    display: inline-block;
+    padding: 5px;
+    background-color: #ebab62;
+    border-radius: 7px 0px 0px 7px;
+}
+
+#cidadeDropdown {
+    padding: 4px;
+    height: 28px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 2.5px solid #fda40028;
+    border-radius: 0px 7px 7px 0px;
+    transition: border-color 0.3s;
+}
+
+select#cidadeDropdown:hover,
+select#cidadeDropdown:focus {
+    border-color: #fda500;
+}
+
+.selecione {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cidadeTable {
+    margin-bottom: 100px;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+}
+
+#tremembeTable{
+    height: 700px;
+   
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 180px;
+}
+
+td {
+    padding-left: 10px;
+}
+
+th {
+    background-color: orangered;
+    color: white;
+
+}
+
+tr:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+    width: 280px;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    width: 350px;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+    width: 130px;
+}
+
+
+
+select {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    box-shadow: 0px 0px 5px rgb(63, 63, 63);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+#cabralia{
+    margin-bottom: 100px;
+}

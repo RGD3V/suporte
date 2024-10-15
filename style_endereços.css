@@ -19,10 +19,10 @@ body main {
 
 #menu {
     background-color: #f18407;
+    position: fixed;
     top: 0;
     width: 100%;
     margin: 0px;
-    position: fixed;
 }
 
 #menu ul {
@@ -36,8 +36,8 @@ body main {
 #menu ul li {
     display:inline;
     margin-right: 0px;
-    padding: 10px;
-    padding-bottom: 10px;
+    padding: 5px;
+    position: relative; /* Isso garante que o dropdown seja posicionado corretamente */
 }
 
 #menu ul li a {
@@ -46,7 +46,7 @@ body main {
     color: white;
     box-shadow: 0px 0px 5px rgb(63, 63, 63);
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -131,5 +131,38 @@ table tr:hover {
     padding: 3px;
     border-radius: 10px;
 
+}
+/* Conteúdo do dropdown (opções ocultas inicialmente) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 12, 12, 0); /* Mude para uma cor com transparência */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0);
+    z-index: 1;
+    top: 100%; /* Posiciona logo abaixo do item pai */
+    left: 0; /* Alinha com o item "PROCEDIMENTOS" */
+}
+
+
+/* Links dentro das opções do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Mudar cor de fundo ao passar o mouse sobre as opções */
+.dropdown-content a:hover {
+    background-color: orangered;
+}
+
+/* Mostrar o conteúdo do dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
 }
 }

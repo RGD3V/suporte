@@ -6,14 +6,26 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    html { background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62); }
+    html { 
+        height: 100%;
+        background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62); }
     
+    body{ display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
     body main {
         height: calc(100vh - 128px);
         background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 100px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex: 1;
     }
     
     #home_img {
@@ -41,6 +53,7 @@
         display:inline;
         margin-right: 0px;
         padding: 5px;
+        position: relative; /* Isso garante que o dropdown seja posicionado corretamente */
     }
     
     #menu ul li a {
@@ -49,7 +62,7 @@
         color: white;
         box-shadow: 0px 0px 5px rgb(63, 63, 63);
         font-weight: bold;
-        padding: 5px 10px;
+        padding: 5px 15px;
         border-radius: 5px;
         transition: background-color 0.3s;
     }
@@ -63,6 +76,7 @@
         text-align: center;
         background-color: orangered;
         padding: 5px;
+        margin-top: auto;
     }
     
     footer p a {
@@ -72,5 +86,69 @@
         text-shadow: 0px 0px 5px black;
     }
     
-    footer p a:hover {color: black;}
+    footer p a:hover { color: black; }
+
+    /* Conteúdo do dropdown (opções ocultas inicialmente) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 12, 12, 0); /* Mude para uma cor com transparência */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0);
+        z-index: 1;
+        top: 100%; /* Posiciona logo abaixo do item pai */
+        left: 0; /* Alinha com o item "PROCEDIMENTOS" */
+    }
+    
+
+    /* Links dentro das opções do dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /* Mudar cor de fundo ao passar o mouse sobre as opções */
+    .dropdown-content a:hover {
+        background-color: orangered;
+    }
+
+    /* Mostrar o conteúdo do dropdown ao passar o mouse */
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #procedder {
+        background-color: rgb(230, 230, 230);
+        width: 100%;
+        max-width: 80%; /* Limita a largura máxima */
+        height: 580px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.918);
+        border-radius: 3px;
+        padding: 20px;
+    }
+    main #procedder ul,
+    main #procedeer ol{
+        padding-left: 40px;
+    }
+
+    main #procedder li{
+        list-style-position: inside;
+    }
+    p{
+        margin-top: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        margin-top: 10px;
+    }
+
+    
+
 }

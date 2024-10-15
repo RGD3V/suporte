@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCO</title>
+    <link rel="shortcut icon" href="../imagens/Logo_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="seccionalcss.css">
+</head>
+
+<body>
+    <div class="selecione">
+        <label for="menu">Selecione o Patio:</label>
+        <select id="cidadeDropdown" onchange="mostrarTabela()">
+            <option value="" disabled selected hidden></option>
+            <option value="cabralia">Cabralia</option>
+            <option value="ourinhos">Ourinhos</option>
+        </select>
+        <a href="../index.html">Voltar</a>
+    </div>
+
+    <div>
+        <div id="ourinhosTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Município</th>
+                        <th>Unidade</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="ourinhos1">
+                        <td>Ourinhos</td>
+                        <td>Plantão Policial Permanente</td>
+                        <td>Avenida Luis Saldanha Rodrigues, 2550</td>
+                        <td>(14) 3322-1022</td>
+                    </tr>
+                    <tr id="ourinhos2">
+                        <td>Ourinhos</td>
+                        <td>Central de Polícia Judiciária</td>
+                        <td>Avenida Luis Saldanha Rodrigues, 2550</td>
+                        <td>(14) 3322-1022</td>
+                    </tr>
+                    <tr id="ourinhos3">
+                        <td>Ourinhos</td>
+                        <td>DEL. Defesa Mulher</td>
+                        <td>Rua Aristides Lau Sampaio, nº 159</td>
+                        <td>(14) 3322-5343</td>
+                    </tr>
+                    <tr id="ourinhos4">
+                        <td>Ourinhos</td>
+                        <td>DEL. Investigações Gerais</td>
+                        <td>Rua Benedita Fernandes Cury, nº 370</td>
+                        <td>(14) 3326-2343</td>
+                    </tr>
+                    <tr id="ourinhos5">
+                        <td>Ourinhos</td>
+                        <td>Investigação Entorpecentes</td>
+                        <td>Rua Hassib Mofarrej, nº 1156</td>
+                        <td>(14) 3325-3333</td>
+                    </tr>
+                    <tr id="bernardino">
+                        <td>Bernardino de Campos</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Avenida da Saudade, nº 155</td>
+                        <td>(14) 3346-1161</td>
+                    </tr>
+                    <tr id="canitar">
+                        <td>Canitar</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Joaquim Bernardo de Mendonça, nº 96</td>
+                        <td>(14) 3343-1106</td>
+                    </tr>
+                    <tr id="chavantes">
+                        <td>Chavantes</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Cel. Júlio Silva, nº 696</td>
+                        <td>(14) 3342-1561</td>
+                    </tr>
+                    <tr id="espirito-santo">
+                        <td>Espírito Sto. do Turvo</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Virgílio Gonçalves, nº 225</td>
+                        <td>(14) 3375-1151</td>
+                    </tr>
+                    <tr id="ipaussu">
+                        <td>Ipaussu</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Domingos Fernandes, nº 412</td>
+                        <td>(14) 3344-1101</td>
+                    </tr>
+                    <tr id="oleo">
+                        <td>Óleo</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Padre Guerreiro, nº 200</td>
+                        <td>(14) 3357-1166</td>
+                    </tr>
+                    <tr id="ribeirao-do-sul">
+                        <td>Ribeirão do Sul</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Ermelinda Domingues Davini, nº 503</td>
+                        <td>(14) 3389-1181</td>
+                    </tr>
+                    <tr id="salto-grande">
+                        <td>Salto Grande</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Mal. Floriano Peixoto, nº 341</td>
+                        <td>(14) 3378-1333</td>
+                    </tr>
+                    <tr id="santa-cruz">
+                        <td>Santa Cruz do Rio Pardo</td>
+                        <td>Central de Polícia Judiciária e NECRIM</td>
+                        <td>Travessa Pedro Henrique Oliveira, nº 2</td>
+                        <td>(14) 3372-1001</td>
+                    </tr>
+                    <tr id="sao-pedro">
+                        <td>São Pedro do Turvo</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Cel. Garcia Braga, nº 159</td>
+                        <td>(14) 3377-1316</td>
+                    </tr>
+                    <tr id="timburi">
+                        <td>Timburi</td>
+                        <td>DEL. POL. MUN</td>
+                        <td>Rua Lindolfo Camargo Alves, nº 871</td>
+                        <td>(14) 3389-1121</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="cabraliaTable" class="cidade-table">
+            <table id="cabralia">
+                <thead>
+                    <tr>
+                        <th>Unidade</th>
+                        <th>Endereço Completo (Rua, nº, Bairro)</th>
+                        <th>Telefones (DDD 14)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="bauru1">
+                        <td>Bauru – Central de Polícia Judiciária</td>
+                        <td>Av. Rodrigues Alves, 23-23, Centro</td>
+                        <td>3235-6500</td>
+                    </tr>
+                    <tr id="bauru2">
+                        <td>Bauru – Plantão Policial e DDM</td>
+                        <td>Praça Dom Pedro II, 2-70, Centro</td>
+                        <td>3224-3160 / 3234-3887</td>
+                    </tr>
+                    <tr id="agudos">
+                        <td>Agudos</td>
+                        <td>Rua Odon P. Albuquerque, 787, Centro</td>
+                        <td>3261-1100 / 3261-1101</td>
+                    </tr>
+                    <tr id="arealva">
+                        <td>Arealva</td>
+                        <td>Av. da Saudade, 522, Centro</td>
+                        <td>3296-1281</td>
+                    </tr>
+                    <tr id="avai">
+                        <td>Avaí</td>
+                        <td>Rua Domingos Zulian, 285, Centro</td>
+                        <td>3287-1122</td>
+                    </tr>
+                    <tr id="balbinos">
+                        <td>Balbinos</td>
+                        <td>Rua Ângelo Pavan, s/n, Centro</td>
+                        <td>3583-1121</td>
+                    </tr>
+                    <tr id="borebi">
+                        <td>Borebi</td>
+                        <td>Rua 7 de Setembro, 169, Centro</td>
+                        <td>3267-1122</td>
+                    </tr>
+                    <tr id="cabraliapta">
+                        <td>Cabralia Pta.</td>
+                        <td>Av. Mario Amaral Gurgel, 259, Centro</td>
+                        <td>3276-1122</td>
+                    </tr>
+                    <tr id="duartina">
+                        <td>Duartina</td>
+                        <td>Av. 9 de Julho, 477, Centro</td>
+                        <td>3287-1123 / 3284-4392</td>
+                    </tr>
+                    <tr id="iacanga">
+                        <td>Iacanga</td>
+                        <td>Rua Dr. Sebastião P. Xavier, 352, Centro</td>
+                        <td>3294-1346</td>
+                    </tr>
+                    <tr id="lencoispta">
+                        <td>Lençóis Pta.</td>
+                        <td>Rua Ignácio Anselmo, 777, Centro</td>
+                        <td>3263-0101 / 3264-1122</td>
+                    </tr>
+                    <tr id="lucianopolis">
+                        <td>Lucianópolis</td>
+                        <td>Rua Dona Maria Faustina, 385, Centro</td>
+                        <td>3286-1228</td>
+                    </tr>
+                    <tr id="macatuba">
+                        <td>Macatuba</td>
+                        <td>Rua Virgílio Enei, 2212, Centro</td>
+                        <td>3268-1158</td>
+                    </tr>
+                    <tr id="paulistania">
+                        <td>Paulistânia</td>
+                        <td>Rua Joaquim Soares, 63, Centro</td>
+                        <td>3275-1005</td>
+                    </tr>
+                    <tr id="pederneiras">
+                        <td>Pederneiras</td>
+                        <td>Rua Riachuelo, 383, Centro</td>
+                        <td>3284-1122 / 3284-4235</td>
+                    </tr>
+                    <tr id="piraju">
+                        <td>Pirajuí</td>
+                        <td>Rua Riachuelo, 1059, Centro</td>
+                        <td>3572-1372 / 3572-1347</td>
+                    </tr>
+                    <tr id="piratininga">
+                        <td>Piratininga</td>
+                        <td>Rua 25 de Janeiro, 66, Centro</td>
+                        <td>3265-1122</td>
+                    </tr>
+                    <tr id="presalves">
+                        <td>Pres. Alves</td>
+                        <td>Rua Tiradentes, 69, Centro</td>
+                        <td>3277-1000</td>
+                    </tr>
+                    <tr id="reginopolis">
+                        <td>Reginópolis</td>
+                        <td>Rua Expedicionários, 702, Centro</td>
+                        <td>3589-1126</td>
+                    </tr>
+                    <tr id="ubirajara">
+                        <td>Ubirajara</td>
+                        <td>Rua Antônio L. Santos, 44, Centro</td>
+                        <td>3472-1210</td>
+                    </tr>
+                    <tr id="bauru3">
+                        <td>Bauru – DEIC</td>
+                        <td>Av. Rodrigues Alves, 23-23, Centro, Bauru</td>
+                        <td>3229-5255</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+    </div>
+    <footer>
+        .
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tables = document.querySelectorAll('.cidade-table');
+            tables.forEach(function (table) {
+                table.style.display = 'none';
+            });
+        });
+
+        function mostrarTabela() {
+            var tables = document.querySelectorAll('.cidade-table');
+            tables.forEach(function (table) {
+                table.style.display = 'none';
+            });
+            var cidadeSelecionada = document.getElementById('cidadeDropdown').value;
+
+            var cidadeTable = document.getElementById(cidadeSelecionada + 'Table');
+            cidadeTable.style.display = 'block';
+        }
+    </script>
+
+
+</body>
+
+</html>
