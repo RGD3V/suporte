@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
     <link rel="stylesheet" href="style-home.css"> <!-- Telas grandes -->
     <link rel="stylesheet" href="style-home-mobile.css"> <!-- Celulares (vertical) -->
     <link rel="stylesheet" href="style-home-mobile-horiz.css"> <!-- Celulares (horizontal) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body onresize="resize()">
     <header>
         <span id="menuBurguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -19,7 +22,12 @@
                 <li class="menu_item"><a href="internet.html" target="_self">INTERNET</a></li>
                 <li class="menu_item"><a href="endereços.html" target="_self">ENDEREÇOS</a></li>
                 <li class="menu_item"><a href="cco/mapa.html" target="_self">MAPAS</a></li>
-                <li class="menu_item"><a href="cco/guincheiro.html" target="_self">GUINCHEIROS</a></li>
+                <li class="menu_item dropdown">
+                    <a href="cco/guincheiro.html" target="_self">ACIONAMENTO</a>
+                    <div class="dropdown-content">
+                        <a href="cco/seccional.html">SECCIONAL</a>
+                    </div>
+                </li>
                 <li class="menu_item dropdown">
                     <a href="index.html" target="_self">PROCEDIMENTOS</a>
                     <div class="dropdown-content">
@@ -31,11 +39,75 @@
             </ul>
         </nav>
     </header>
-   
+
     <main>
-        <h1>EM DESENVOLVIMENTO</h1>
+        <div id="procedder">
+            <h1>Procedimento de Liberação de Veículos - DETRAN</h1>
+
+            <p>Pague os débitos e taxas</p>
+            <p></p>
+            <ul>
+                <li>Efetue o pagamento de todos os débitos do veículo e da taxa de estadia diária diretamente nos bancos
+                    conveniados (apenas correntistas), Casas Lotéricas ou Pix:</li>
+                <li>Débitos do veículo (multas, impostos e encargos pendentes): devem ser pagos informando o Renavam do
+                    veículo </li>
+                <li>Estadia diária: deve ser paga informando o Renavam. Esta taxa contempla apenas o serviço de
+                    liberação do veículo:
+                    <strong>R$ 20,06</strong>.
+                </li>
+            </ul>
+            
+            <p>Documentos necessarios para solicitação:</p>
+            <ul>
+                <li>Documento de identificação pessoal do proprietário do veículo - frente e verso</li>
+                <li>Termo de Recolhimento de Veículo (TRV)</li>
+                <p>Pode ser substituído por:
+                    Caso o TRV tenha sido extraviado, o requerente deverá juntar declaração simples referente ao fato,
+                    subscrita pelo proprietário do veículo ou representante legal, cuja assinatura deverá coincidir com
+                    aquela constante no documento de identidade apresentado. Clique aqui para obter o modelo de
+                    declaração de extravio.</p>
+                <li>Comprovante de pagamento de débitos do veículo (multas, impostos e encargos pendentes).
+                    <br><br>
+                    <p><strong>Atenção!</strong> Todos os débitos existentes devem ser quitados antes da solicitação do
+                        serviço.</p>
+                    <br>
+
+                </li>
+            </ul>
+
+            <p><strong>Documentação adicional para casos específicos</strong></p>
+
+            <p>Veículo de pessoa física solicitado por procurador (casos em que a liberação não é feita pelo proprietário do veículo) </p>
+            <ul>
+                <li>Documento de identificação pessoal do procurador - frente e verso</li>
+                <li>Procuração específica que deverá conter a descrição do serviço a ser realizado e a identificação do veículo (marca, modelo e placa), por instrumento público (vigente) ou particular (com reconhecimento de firma por autenticidade)</li>
+                <p>Modelo de procuração disponivel no site do Detran.</p>
+                <br><br>
+            </ul>
+            <p>Após juntar todos esses documentos escaneados, entrar no site do Detran para fazer a solicitação, onde todo processo é online, procurando "Liberação Detran" no google, e na pagina achar o botão <strong>"Faça pela Internet"</strong> e seguir as orientações do site.</p>
+            
+            <p>Após confirmar a solicitação, aguarde o retorno da equipe do Detran-SP, o que será feito por e-mail em <strong>até 2 dias</strong>. Verifique se o e-mail não caiu em sua caixa de spam.</strong>
+
+            <h2>Valores</h2>
+           <ul>
+            <li>Taxa de estadia de veículo, por dia: <strong>R$ 40,72</strong>.</li>
+            <li>Taxa de rebocamento de veículo: <strong>R$ 407,22</strong>.</li>
+           </ul>      
+
+            <h2>Formas de Pagamento</h2>
+            <p>As formas de pagamento serão aquelas disponibilizadas pelos pátios:</p>
+            <ul>
+                <li>PIX</li>
+                <li>Boleto</li>
+            </ul>
+
+            <p><strong>Cumpre ressaltar:</strong> "O veículo apreendido ou removido a qualquer título e não reclamado
+                por seu proprietário dentro do prazo de sessenta dias, contado da data de recolhimento, será avaliado e
+                levado a leilão, a ser realizado preferencialmente por meio eletrônico", conforme o que preconiza o
+                artigo 328 do Código de Trânsito Brasileiro.</p>
+        </div>
     </main>
-   
+
     <footer>
         <p><a href="#" target="_blank">Developed by DG Web Solutions.</a></p>
     </footer>
@@ -47,11 +119,12 @@
             } else { menu.style.display = `block` }
         }
 
-        function resize() { 
+        function resize() {
             if (window.innerWidth >= 600) {
                 menu.style.display = `block`
             } else { menu.style.display = `none` }
         }
     </script>
 </body>
+
 </html>
