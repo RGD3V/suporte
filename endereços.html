@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="shortcut icon" href="imagens/Logo_ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style_endereços.css">
     <link rel="stylesheet" href="style-endereços-mobile.css"> <!-- Celulares (vertical) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body onresize="resize()">
     <header>
         <span id="menuBurguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -24,7 +27,7 @@
                         <a href="cco/seccional.html">SECCIONAL</a>
                     </div>
                 </li>
-                
+
                 <li class="menu_item dropdown">
                     <a href="index.html" target="_self">PROCEDIMENTOS</a>
                     <div class="dropdown-content">
@@ -37,176 +40,233 @@
         </nav>
     </header>
     <main>
-    <div id="address">
-        <table>
-            <thead>
-              <tr>
-                <th>MUNICIPIO</th>
-                <th>ENDEREÇO</th>
-                <th>CEP</th>
-                <th>REFERÊNCIA</th>
-                <th>TELEFONE</th>
-              </tr>
-            </thead>
+        <div id="address">
+            <table>
+                <thead>
+                    <tr>
+                        <th>MUNICIPIO</th>
+                        <th>ENDEREÇO</th>
+                        <th>CEP</th>
+                        <th>REFERÊNCIA</th>
+                        <th>TELEFONE</th>
+                    </tr>
+                </thead>
                 <tbody>
-                        <tr>
-                            <td><a class="href_address" href="https://goo.gl/maps/XpYpQcteLaLxLVoL9" target="_blank">Agudos</a></td>
-                            <td><span class="copyTextStyle" id="copyTextAgudos">R. Aparecida do Norte, 90 - Vila Honorina</span></td>
-                            <td id="celula_centro">17120-000</td>
-                            <td>Posto Elefantinho</td>
-                            <td id="celula_centro">(14) 99829-3720</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/VkzdRejp6KS4Uxaw8" target="_blank">Araraquara</a></td>
-                            <td><span class="copyTextStyle" id="copyTextAraraquara">Av. Dr. Waldomiro Blundi, 54</span></td>
-                            <td id="celula_centro">14807-422</td>
-                            <td>Ao Lado Do Posto De Combustivel Do Bairro Yolanda Ópice</td>
-                            <td id="celula_centro">(14)99901-3004</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/dhHBZNQUZw1tACz36" target="_blank">Avaré</a></td>
-                            <td><span class="copyTextStyle" id="copyTextAvare">Sp 255 Km 264 Zona Rural , S/N</span></td>
-                            <td id="celula_centro">18704-20</td>
-                            <td>De frente com a InRoda</td>
-                            <td id="celula_centro">(14) 99862-5237</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/cnC8Mk346ZVRAWZg8" target="_blank">Barretos</a></td>
-                            <td><span class="copyTextStyle" id="copyTextBarretos">Rua Altair Do Nascimento, 850</span></td>
-                            <td id="celula_centro">14783-152</td>
-                            <td>Próximo à Mercedes Benz</td>
-                            <td id="celula_centro">(17) 99758-0285</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/nCR5UbxJm1wWQ5He7" target="_blank">Botucatu</a></td>
-                            <td><span class="copyTextStyle" id="copyTextBotucatu">Avenida Das Hortências, 1703</span></td>
-                            <td id="celula_centro">18605-258</td>
-                            <td style="text-align: center;">x</td>
-                            <td id="celula_centro">(14)99728-8705</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/uJH3cYCjRFRAMU8E8" target="_blank">Caraguatatuba</a></td>
-                            <td><span class="copyTextStyle" id="copyTextCaraguatatuba">Rua Aríetes, 100</span></td>
-                            <td id="celula_centro">11675-680</td>
-                            <td>Próximo à policia rodoviária</td>
-                            <td id="celula_centro">(14) 99892-9069</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://goo.gl/maps/hoRjHjehcePnUsuJA" target="_blank">Cerqueira Cesar</a></td>
-                            <td><span class="copyTextStyle" id="copyTextCerqueira">Avenida João Cardoso de Oliveira, 870 - Centro</span></td>
-                            <td id="celula_centro">18760-063</td>
-                            <td>Ao Lado Do Haras Ramos</td>
-                            <td id="celula_centro">(14) 99892-9069</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/fVDdsYkz3voWH8PGA" target="_blank">Duartina</a></td>
-                            <td><span class="copyTextStyle" id="copyTextDuartina">Av. Áureliano Aredes, Cabrália Paulista - SP S/N</span></td>
-                            <td id="celula_centro">17480-000</td>
-                            <td>x</td>
-                            <td id="celula_centro">(14)99777-2850</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://goo.gl/maps/uCSchwDjTZ5rFw3a9" target="_blank">Guararapes</a></td>
-                            <td><span class="copyTextStyle" id="copyTextGuararapes">Estrada Vicinal Natal Scatolin, S/N. Km 04 - Corrego Nascente</span></td>
-                            <td id="celula_centro">16700-000</td>
-                            <td>Ao Lado Esquerdo Do Motel Liv</td>
-                            <td id="celula_centro">(17) 99765-1774</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/xEGFfAuAGbShf8En7" target="_blank">Jau</a></td>
-                            <td><span class="copyTextStyle" id="copyTextJau">Av. Lourenço Neto De Almeida Prado, 1031</span></td>
-                            <td id="celula_centro">17213-710</td>
-                            <td>Atrás Do Território Do Calçado</td>
-                            <td id="celula_centro">(14)99747-3550</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/aZAuKhEth87MSuQt5" target="_blank">Marilia</a></td>
-                            <td><span class="copyTextStyle" id="copyTextMarilia">Rodovia Comandante João Ribeiro De Barros, Sp 294 - Km 464, S/N</span></td>
-                            <td id="celula_centro">17519-780</td>
-                            <td>Ao Lado Da Empresa Bananas Coreban</td>
-                            <td id="celula_centro">(14) 99740-8643</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://goo.gl/maps/8ChdzQtKAxVAKsHm7" target="_blank">Mirassol</a></td>
-                            <td><span class="copyTextStyle" id="copyTextMirassol">Av. Airton José Bilachi, 3965</span></td>
-                            <td id="celula_centro">15134-022</td>
-                            <td>Próximo ao laboratório de alimentos Intertek Brasil</td>
-                            <td id="celula_centro">(14)99849-4265</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://goo.gl/maps/dzt6AecAoQnq99PW9" target="_blank">Ourinhos</a></td>
-                            <td><span class="copyTextStyle" id="copyTextOurinhos">Rua Mario de Oliveira Branco, 150</span></td>
-                            <td id="celula_centro">19902-640</td>
-                            <td>Atras da Ouribram</td>
-                            <td id="celula_centro">(14) 99825-9303</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://goo.gl/maps/xtSSKJiV4do8pi1y8" target="_blank">Presidente Prudente</a></td>
-                            <td><span class="copyTextStyle" id="copyTextPrudente">Rodovia Assis Chateaubriand Sp 425, Km 459</span></td>
-                            <td id="celula_centro">19053-680</td>
-                            <td>Em Frente ao Angar Do Águia Da Policia Militar</td>
-                            <td id="celula_centro">(17) 99753-0895</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/8ZshLEF8oa1CTcNd8" target="_blank">Bolsão</a></td>
-                            <td><span class="copyTextStyle" id="copyTextBolsao">Rodovia Orlando Quagliato, Km 10</span></td>
-                            <td id="celula_centro">18900-000</td>
-                            <td>Em frente ao Motel Vila Verde</td>
-                            <td id="celula_centro">(14)99778-4610</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/9j89ZXf4Jc4iku6M6" target="_blank">Santana da Ponte Pensa</a></td>
-                            <td><span class="copyTextStyle" id="copyTextSantana">Rodovia Elzirio Martins Km 1/5, S/N. CENTRO</span></td>
-                            <td id="celula_centro">15765-000</td>
-                            <td>Perto Da Caixa Dagua Da Sabesp</td>
-                            <td id="celula_centro">(14)99648-1601</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/kXvp1iL2ae3Wkz9H8" target="_blank">São José do Rio Preto</a></td>
-                            <td><span class="copyTextStyle" id="copyTextRioPreto">Rua Felipe Assad Karam, 300 - Estância Jockey Clube</span></td>
-                            <td id="celula_centro">15081-517</td>
-                            <td>Proxima A Mar&Rio Pescados</td>
-                            <td id="celula_centro">(17)99784-0491</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/DuG7De2nVsdbpAWdA" target="_blank">São Vicente</a></td>
-                            <td><span class="copyTextStyle" id="copyTextSaoVicente">Av. Martins Fontes nº1118</span></td>
-                            <td id="celula_centro">11390-200</td>
-                            <td>Proximo a Pou-Cor industria de tintas</td>
-                            <td id="celula_centro">(13)99657-0780</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://goo.gl/maps/XBMws1WLEZjDGhvk8" target="_blank">Sorocaba</a></td>
-                            <td><span class="copyTextStyle" id="copyTextSorocaba">Estrada Ferroviário João De Oliveira, 100. Bairro Ipanema Das Pedras</span></td>
-                            <td id="celula_centro">18052-464</td>
-                            <td>Ao Lado Da Pista De Carro</td>
-                            <td id="celula_centro">(15) 99632-5535</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/wGZUX5ZWRpzWNbJP8" target="_blank">Tremembé (Guarulhos-SP)</a></td>
-                            <td><span class="copyTextStyle" id="copyTextTremembe">Estrada Três Cruzes, 718 - Bairro Tremembé</span></td>
-                            <td id="celula_centro">02285-000</td>
-                            <td style="text-align: center;">x</td>
-                            <td id="celula_centro">(11)96387-6100</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/sm2gX9q8dFbXJsbi6" target="_blank">Teodoro Sampaio</a></td>
-                            <td><span class="copyTextStyle" id="copyTextTeodoro">Rodovia Arlindo Betio, km 01</span></td>
-                            <td id="celula_centro">19280-000</td>
-                            <td>Próximo Super Mercado Triunfo loja 2</td>
-                            <td id="celula_centro">(18) 99711-2249</td>
-                        </tr>
-                        <tr>
-                            <td><a class="href_address" href="https://maps.app.goo.gl/Ug8SUDpuTon6SRzQ8" target="_blank">Ubatuba</a></td>
-                            <td><span class="copyTextStyle" id="copyTextUbatuba">Estrada Monte Valério, 2300</span></td>
-                            <td id="celula_centro">11691-400</td>
-                            <td>300 Metros Após O Campo De Futebol</td>
-                            <td id="celula_centro">(12)99682-7480</td>
-                        </tr>
+                    <!--Agudos-->
+                    <tr>
+                        <td><a class="href_address" href="https://goo.gl/maps/XpYpQcteLaLxLVoL9"
+                                target="_blank">Agudos</a></td>
+                        <td><span class="copyTextStyle" id="copyTextAgudos">R. Aparecida do Norte, 90 - Vila
+                                Honorina</span></td>
+                        <td id="celula_centro">17120-000</td>
+                        <td>Posto Elefantinho</td>
+                        <td id="celula_centro">(14) 99829-3720</td>
+                    </tr>
+                    <!--Araraquara-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/VkzdRejp6KS4Uxaw8"
+                                target="_blank">Araraquara</a></td>
+                        <td><span class="copyTextStyle" id="copyTextAraraquara">Av. Dr. Waldomiro Blundi, 54</span></td>
+                        <td id="celula_centro">14807-422</td>
+                        <td>Ao Lado Do Posto De Combustivel Do Bairro Yolanda Ópice</td>
+                        <td id="celula_centro">(14)99901-3004</td>
+                    </tr>
+                    <!--Avaré-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/dhHBZNQUZw1tACz36"
+                                target="_blank">Avaré</a></td>
+                        <td><span class="copyTextStyle" id="copyTextAvare">Sp 255 Km 264 Zona Rural , S/N</span></td>
+                        <td id="celula_centro">18704-20</td>
+                        <td>De frente com a InRoda</td>
+                        <td id="celula_centro">(14) 99862-5237</td>
+                    </tr>
+                    <!--Barretos-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/cnC8Mk346ZVRAWZg8"
+                                target="_blank">Barretos</a></td>
+                        <td><span class="copyTextStyle" id="copyTextBarretos">Rua Altair Do Nascimento, 850</span></td>
+                        <td id="celula_centro">14783-152</td>
+                        <td>Próximo à Mercedes Benz</td>
+                        <td id="celula_centro">(17) 99758-0285</td>
+                    </tr>
+                    <!--Botucatu-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/nCR5UbxJm1wWQ5He7"
+                                target="_blank">Botucatu</a></td>
+                        <td><span class="copyTextStyle" id="copyTextBotucatu">Avenida Das Hortências, 1703</span></td>
+                        <td id="celula_centro">18605-258</td>
+                        <td style="text-align: center;">x</td>
+                        <td id="celula_centro">(14)99728-8705</td>
+                    </tr>
+                    <!--Caraguatatuba-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/uJH3cYCjRFRAMU8E8"
+                                target="_blank">Caraguatatuba</a></td>
+                        <td><span class="copyTextStyle" id="copyTextCaraguatatuba">Rua Aríetes, 100</span></td>
+                        <td id="celula_centro">11675-680</td>
+                        <td>Próximo à policia rodoviária</td>
+                        <td id="celula_centro">(14) 99892-9069</td>
+                    </tr>
+                    <!--Cerqueira Cesar-->
+                    <tr>
+                        <td><a class="href_address" href="https://goo.gl/maps/hoRjHjehcePnUsuJA"
+                                target="_blank">Cerqueira Cesar</a></td>
+                        <td><span class="copyTextStyle" id="copyTextCerqueira">Avenida João Cardoso de Oliveira, 870 -
+                                Centro</span></td>
+                        <td id="celula_centro">18760-063</td>
+                        <td>Ao Lado Do Haras Ramos</td>
+                        <td id="celula_centro">(14) 99892-9069</td>
+                    </tr>
+                    <!--Duartina-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/fVDdsYkz3voWH8PGA"
+                                target="_blank">Duartina</a></td>
+                        <td><span class="copyTextStyle" id="copyTextDuartina">Av. Áureliano Aredes, Cabrália Paulista -
+                                SP S/N</span></td>
+                        <td id="celula_centro">17480-000</td>
+                        <td>x</td>
+                        <td id="celula_centro">(14)99777-2850</td>
+                    </tr>
+                    <!--Guararapes-->
+                    <tr>
+                        <td><a class="href_address" href="https://goo.gl/maps/uCSchwDjTZ5rFw3a9"
+                                target="_blank">Guararapes</a></td>
+                        <td><span class="copyTextStyle" id="copyTextGuararapes">Estrada Vicinal Natal Scatolin, S/N. Km
+                                04 - Corrego Nascente</span></td>
+                        <td id="celula_centro">16700-000</td>
+                        <td>Ao Lado Esquerdo Do Motel Liv</td>
+                        <td id="celula_centro">(17) 99765-1774</td>
+                    </tr>
+                    <!--Jau-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/xEGFfAuAGbShf8En7"
+                                target="_blank">Jau</a></td>
+                        <td><span class="copyTextStyle" id="copyTextJau">Av. Lourenço Neto De Almeida Prado, 1031</span>
+                        </td>
+                        <td id="celula_centro">17213-710</td>
+                        <td>Atrás Do Território Do Calçado</td>
+                        <td id="celula_centro">(14)99747-3550</td>
+                    </tr>
+                    <!--Marilia-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/aZAuKhEth87MSuQt5"
+                                target="_blank">Marilia</a></td>
+                        <td><span class="copyTextStyle" id="copyTextMarilia">Rodovia Comandante João Ribeiro De Barros,
+                                Sp 294 - Km 464, S/N</span></td>
+                        <td id="celula_centro">17519-780</td>
+                        <td>Ao Lado Da Empresa Bananas Coreban</td>
+                        <td id="celula_centro">(14) 99740-8643</td>
+                    </tr>
+                    <!--Mirassol-->
+                    <tr>
+                        <td><a class="href_address" href="https://goo.gl/maps/8ChdzQtKAxVAKsHm7"
+                                target="_blank">Mirassol</a></td>
+                        <td><span class="copyTextStyle" id="copyTextMirassol">Av. Airton José Bilachi, 3965</span></td>
+                        <td id="celula_centro">15134-022</td>
+                        <td>Próximo ao laboratório de alimentos Intertek Brasil</td>
+                        <td id="celula_centro">(14)99849-4265</td>
+                    </tr>
+                    <!--Ourinhos-->
+                    <tr>
+                        <td><a class="href_address" href="https://goo.gl/maps/dzt6AecAoQnq99PW9"
+                                target="_blank">Ourinhos</a></td>
+                        <td><span class="copyTextStyle" id="copyTextOurinhos">Rua Mario de Oliveira Branco, 150</span>
+                        </td>
+                        <td id="celula_centro">19902-640</td>
+                        <td>Atras da Ouribram</td>
+                        <td id="celula_centro">(14) 99825-9303</td>
+                    </tr>
+                    <!--Presidente Prudente-->
+                    <tr>
+                        <td><a class="href_address" href="https://goo.gl/maps/xtSSKJiV4do8pi1y8"
+                                target="_blank">Presidente Prudente</a></td>
+                        <td><span class="copyTextStyle" id="copyTextPrudente">Rodovia Assis Chateaubriand Sp 425, Km
+                                459</span></td>
+                        <td id="celula_centro">19053-680</td>
+                        <td>Em Frente ao Angar Do Águia Da Policia Militar</td>
+                        <td id="celula_centro">(17) 99753-0895</td>
+                    </tr>
+                    <!--Bolsao-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/8ZshLEF8oa1CTcNd8"
+                                target="_blank">Bolsão</a></td>
+                        <td><span class="copyTextStyle" id="copyTextBolsao">Rodovia Orlando Quagliato, Km 10</span></td>
+                        <td id="celula_centro">18900-000</td>
+                        <td>Em frente ao Motel Vila Verde</td>
+                        <td id="celula_centro">(14)99778-4610</td>
+                    </tr>
+                    <!--Santana da Ponte Pensa-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/9j89ZXf4Jc4iku6M6"
+                                target="_blank">Santana da Ponte Pensa</a></td>
+                        <td><span class="copyTextStyle" id="copyTextSantana">Rodovia Elzirio Martins Km 1/5, S/N.
+                                CENTRO</span></td>
+                        <td id="celula_centro">15765-000</td>
+                        <td>Perto Da Caixa Dagua Da Sabesp</td>
+                        <td id="celula_centro">(14)99648-1601</td>
+                    </tr>
+                    <!--São José do Rio Preto-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/kXvp1iL2ae3Wkz9H8" target="_blank">São
+                                José do Rio Preto</a></td>
+                        <td><span class="copyTextStyle" id="copyTextRioPreto">Rua Felipe Assad Karam, 300 - Estância
+                                Jockey Clube</span></td>
+                        <td id="celula_centro">15081-517</td>
+                        <td>Proxima A Mar&Rio Pescados</td>
+                        <td id="celula_centro">(17)99784-0491</td>
+                    </tr>
+                    <!--São Vicente-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/DuG7De2nVsdbpAWdA" target="_blank">São
+                                Vicente</a></td>
+                        <td><span class="copyTextStyle" id="copyTextSaoVicente">Av. Martins Fontes nº1118</span></td>
+                        <td id="celula_centro">11390-200</td>
+                        <td>Proximo a Pou-Cor industria de tintas</td>
+                        <td id="celula_centro">(13)99657-0780</td>
+                    </tr>
+                    <!--Sorocaba-->
+                    <tr>
+                        <td><a class="href_address" href="https://goo.gl/maps/XBMws1WLEZjDGhvk8"
+                                target="_blank">Sorocaba</a></td>
+                        <td><span class="copyTextStyle" id="copyTextSorocaba">Estrada Ferroviário João De Oliveira, 100.
+                                Bairro Ipanema Das Pedras</span></td>
+                        <td id="celula_centro">18052-464</td>
+                        <td>Ao Lado Da Pista De Carro</td>
+                        <td id="celula_centro">(15) 99632-5535</td>
+                    </tr>
+                    <!--Tremembé-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/wGZUX5ZWRpzWNbJP8"
+                                target="_blank">Tremembé (Guarulhos-SP)</a></td>
+                        <td><span class="copyTextStyle" id="copyTextTremembe">Estrada Três Cruzes, 718 - Bairro
+                                Tremembé</span></td>
+                        <td id="celula_centro">02285-000</td>
+                        <td style="text-align: center;">x</td>
+                        <td id="celula_centro">(11)96387-6100</td>
+                    </tr>
+                    <!--Teodoro Sampaio-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/sm2gX9q8dFbXJsbi6"
+                                target="_blank">Teodoro Sampaio</a></td>
+                        <td><span class="copyTextStyle" id="copyTextTeodoro">Rodovia Arlindo Betio, km 01</span></td>
+                        <td id="celula_centro">19280-000</td>
+                        <td>Próximo Super Mercado Triunfo loja 2</td>
+                        <td id="celula_centro">(18) 99711-2249</td>
+                    </tr>
+                    <!--Ubatuba-->
+                    <tr>
+                        <td><a class="href_address" href="https://maps.app.goo.gl/Ug8SUDpuTon6SRzQ8"
+                                target="_blank">Ubatuba</a></td>
+                        <td><span class="copyTextStyle" id="copyTextUbatuba">Estrada Monte Valério, 2300</span></td>
+                        <td id="celula_centro">11691-400</td>
+                        <td>300 Metros Após O Campo De Futebol</td>
+                        <td id="celula_centro">(12)99682-7480</td>
+                    </tr>
                 </tbody>
-                </table>
-                    </div>
-            </main>
-            <script src="script_endereços.js"></script>
+            </table>
+        </div>
+    </main>
+    <script src="script_endereços.js"></script>
 </body>
+
 </html>
