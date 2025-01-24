@@ -1,61 +1,61 @@
 @charset "UTF-8";
 @media screen and (min-width: 768px) {
-    
 
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-html {
-    background-color: #ebab62;
-}
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-body main {
-    height: 100%;
-    background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
-    padding-top: 100px;
-}
+    html {
+        background-color: #ebab62;
+    }
 
-#menu {
-    background-color: #f18407;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0px;
-}
+    body main {
+        height: 100%;
+        background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+        padding-top: 100px;
+    }
 
-#menu ul {
-    text-align: center;
-    list-style: none;
-    padding: 10px;
-    margin: 0px;
-    margin-top: 20px;
-}
+    #menu {
+        background-color: #f18407;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin: 0px;
+    }
 
-#menu ul li {
-    display:inline;
-    margin-right: 0px;
-    padding: 5px;
-    position: relative;
-}
+    #menu ul {
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+        margin: 0px;
+        margin-top: 20px;
+    }
 
-#menu ul li a {
-    text-decoration: none;
-    background-color: orangered;
-    color: white;
-    box-shadow: 0px 0px 5px rgb(63, 63, 63);
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+    #menu ul li {
+        display: inline;
+        margin-right: 0px;
+        padding: 5px;
+        position: relative;
+    }
 
-#menu ul li a:hover {
-    background-color: white;
-    color: orangered;
-}
+    #menu ul li a {
+        text-decoration: none;
+        background-color: orangered;
+        color: white;
+        box-shadow: 0px 0px 5px rgb(63, 63, 63);
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #menu ul li a:hover {
+        background-color: white;
+        color: orangered;
+    }
 }
 
 #div_tabela {
@@ -66,7 +66,7 @@ body main {
     box-shadow: 0px 0px 3px black;
 }
 
-main table{
+main table {
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
@@ -75,15 +75,17 @@ main table{
     margin-bottom: 5px;
 }
 
-main table thead tr,th {
+main table thead tr,
+th {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
     background-color: orangered;
-    color: white;   
+    color: white;
 }
 
-main table tbody tr,td {
+main table tbody tr,
+td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
@@ -108,34 +110,37 @@ main table tbody tr:hover {
 }
 
 .th1 {
-    padding: 5px 30px 
+    padding: 5px 30px
 }
 
-    .th2 {
-        padding: 5px 5px 
-    }
+.th2 {
+    padding: 5px 5px
+}
 
-        .th3 {
-            padding: 5px 50px 
-            
-        }
+.th3 {
+    padding: 5px 50px
+}
 
 
 @media (max-width: 1080px) {
     #div_tabela {
-    overflow-x: scroll;
+        overflow-x: scroll;
     }
 }
+
 /* Conteúdo do dropdown (opções ocultas inicialmente) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 12, 12, 0); /* Mude para uma cor com transparência */
+    background-color: rgba(255, 12, 12, 0);
+    /* Mude para uma cor com transparência */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0);
     z-index: 1;
-    top: 100%; /* Posiciona logo abaixo do item pai */
-    left: 0; /* Alinha com o item "PROCEDIMENTOS" */
+    top: 100%;
+    /* Posiciona logo abaixo do item pai */
+    left: 0;
+    /* Alinha com o item "PROCEDIMENTOS" */
 }
 
 
@@ -172,4 +177,3 @@ main table tbody tr:hover {
         box-shadow: none;
     }
 }
-

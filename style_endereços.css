@@ -1,168 +1,175 @@
 @charset "UTF-8";
 @media screen and (min-width: 1280px) {
 
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-    background-color: #ebab62;
-}
-
-body main {
-    height: 100%;
-    background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
-    padding-top: 100px;
-}
-
-#menu {
-    background-color: #f18407;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0px;
-}
-
-#menu ul {
-    text-align: center;
-    list-style: none;
-    padding: 10px;
-    margin: 0px;
-    margin-top: 20px;
-}
-
-#menu ul li {
-    display:inline;
-    margin-right: 0px;
-    padding: 5px;
-    position: relative; /* Isso garante que o dropdown seja posicionado corretamente */
-}
-
-#menu ul li a {
-    text-decoration: none;
-    background-color: orangered;
-    color: white;
-    box-shadow: 0px 0px 5px rgb(63, 63, 63);
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#menu ul li a:hover {
-    background-color: white;
-    color: orangered;
-}
-
-#address {
-    background-color: rgb(255, 255, 255);
-    width: 95%;
-    min-width: 150px;
-    margin: auto;
-    box-shadow: 0px 0px 3px black;
-    margin-bottom: 50px;
-}
-
-table {
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 12px;
-    width: 100%;
-}
-
-
-
-table thead tr, th {
-    padding: 10px;
-    border: 1px solid black;
-    background-color: orangered;
-    font-weight: bold;
-    color: white;
-    font-size: 17px;
-
-}
-
-table tbody tr, td {
-    border: 1px solid black;
-    padding: 4px;
-    text-align: left;
-}
-
-#celula_centro {
-    text-align: center;
-}
-
-table tr:hover {
-    background-color: #e68e2a;
-    font-weight: bold;
-}
-
-.href_address {
-    text-decoration: none;
-    color: black;
-}
-
-.href_address:hover {
-    color: white;
-    font-weight: bold;
-    background-color: orangered;
-    padding: 3px;
-    border-radius: 10px;
-
-}
-
-@media (max-width: 1080px) {
-    #address {
-    overflow-x: scroll;
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
     }
-}
 
-.copyTextStyle {
-    color: black;
-    cursor: pointer;
-}
+    html {
+        background-color: #ebab62;
+    }
 
-.copyTextStyle:hover {
-    color: white;
-    font-weight: bold;
-    background-color: orangered;
-    padding: 3px;
-    border-radius: 10px;
+    body main {
+        height: 100%;
+        background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+        padding-top: 100px;
+    }
 
-}
-/* Conteúdo do dropdown (opções ocultas inicialmente) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 12, 12, 0); /* Mude para uma cor com transparência */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0);
-    z-index: 1;
-    top: 100%; /* Posiciona logo abaixo do item pai */
-    left: 0; /* Alinha com o item "PROCEDIMENTOS" */
-}
+    #menu {
+        background-color: #f18407;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu ul {
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    #menu ul li {
+        display: inline;
+        margin-right: 0px;
+        padding: 5px;
+        position: relative;
+        /* Isso garante que o dropdown seja posicionado corretamente */
+    }
+
+    #menu ul li a {
+        text-decoration: none;
+        background-color: orangered;
+        color: white;
+        box-shadow: 0px 0px 5px rgb(63, 63, 63);
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #menu ul li a:hover {
+        background-color: white;
+        color: orangered;
+    }
+
+    #address {
+        background-color: rgb(255, 255, 255);
+        width: 95%;
+        min-width: 150px;
+        margin: auto;
+        box-shadow: 0px 0px 3px black;
+        margin-bottom: 50px;
+    }
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
 
 
-/* Links dentro das opções do dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
 
-/* Mudar cor de fundo ao passar o mouse sobre as opções */
-.dropdown-content a:hover {
-    background-color: orangered;
-}
+    table thead tr,
+    th {
+        padding: 10px;
+        border: 1px solid black;
+        background-color: orangered;
+        font-weight: bold;
+        color: white;
+        font-size: 17px;
 
-/* Mostrar o conteúdo do dropdown ao passar o mouse */
-.dropdown:hover .dropdown-content {
-    display: block;
-    background-color: rgba(0, 0, 0, 0);
-}
+    }
+
+    table tbody tr,
+    td {
+        border: 1px solid black;
+        padding: 4px;
+        text-align: left;
+    }
+
+    #celula_centro {
+        text-align: center;
+    }
+
+    table tr:hover {
+        background-color: #e68e2a;
+        font-weight: bold;
+    }
+
+    .href_address {
+        text-decoration: none;
+        color: black;
+    }
+
+    .href_address:hover {
+        color: white;
+        font-weight: bold;
+        background-color: orangered;
+        padding: 3px;
+        border-radius: 10px;
+
+    }
+
+    @media (max-width: 1080px) {
+        #address {
+            overflow-x: scroll;
+        }
+    }
+
+    .copyTextStyle {
+        color: black;
+        cursor: pointer;
+    }
+
+    .copyTextStyle:hover {
+        color: white;
+        font-weight: bold;
+        background-color: orangered;
+        padding: 3px;
+        border-radius: 10px;
+
+    }
+
+    /* Conteúdo do dropdown (opções ocultas inicialmente) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 12, 12, 0);
+        /* Mude para uma cor com transparência */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0);
+        z-index: 1;
+        top: 100%;
+        /* Posiciona logo abaixo do item pai */
+        left: 0;
+        /* Alinha com o item "PROCEDIMENTOS" */
+    }
+
+
+    /* Links dentro das opções do dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /* Mudar cor de fundo ao passar o mouse sobre as opções */
+    .dropdown-content a:hover {
+        background-color: orangered;
+    }
+
+    /* Mostrar o conteúdo do dropdown ao passar o mouse */
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+    }
 }

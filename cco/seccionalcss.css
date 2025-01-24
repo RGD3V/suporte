@@ -16,7 +16,7 @@ body {
     margin-bottom: 15px;
 }
 
-label{
+label {
     display: inline-block;
     padding: 5px;
     background-color: #ebab62;
@@ -55,9 +55,9 @@ table {
     background-color: white;
 }
 
-#tremembeTable{
+#tremembeTable {
     height: 700px;
-   
+
 }
 
 th,
@@ -113,6 +113,6 @@ a {
     margin-left: 25px;
 }
 
-#cabralia{
+#cabralia {
     margin-bottom: 100px;
 }

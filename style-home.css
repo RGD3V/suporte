@@ -6,12 +6,12 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    html { 
+    html {
         height: 100%;
-        background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+        background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
     }
-    
-    body { 
+
+    body {
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -19,7 +19,7 @@
 
     main {
         flex: 1;
-        background-image:  linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+        background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
         background-repeat: no-repeat;
         background-attachment: fixed;
         padding-top: 10px;
@@ -27,19 +27,19 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     #home_img {
         display: block;
         margin: auto;
     }
-    
+
     #menu {
         background-color: #f18407;
         position: fixed;
         top: 0;
         width: 100%;
     }
-    
+
     #menu ul {
         text-align: center;
         list-style: none;
@@ -47,14 +47,15 @@
         margin: 0px;
         margin-top: 20px;
     }
-    
+
     #menu ul li {
-        display:inline;
+        display: inline;
         margin-right: 0px;
         padding: 5px;
-        position: relative; /* Isso garante que o dropdown seja posicionado corretamente */
+        position: relative;
+        /* Isso garante que o dropdown seja posicionado corretamente */
     }
-    
+
     #menu ul li a {
         text-decoration: none;
         background-color: orangered;
@@ -65,42 +66,49 @@
         border-radius: 5px;
         transition: background-color 0.3s;
     }
-    
+
     #menu ul li a:hover {
         background-color: white;
         color: orangered;
     }
-    
+
     footer {
         position: fixed;
-        bottom: 0; /* Mantém o footer no fundo da página */
-        width: 100%; /* Faz o footer ter a largura total */
+        bottom: 0;
+        /* Mantém o footer no fundo da página */
+        width: 100%;
+        /* Faz o footer ter a largura total */
         text-align: center;
         background-color: orangered;
         padding: 5px;
     }
-    
+
     footer p a {
         text-decoration: none;
         color: white;
         font-weight: bold;
         text-shadow: 0px 0px 5px black;
     }
-    
-    footer p a:hover { color: black; }
+
+    footer p a:hover {
+        color: black;
+    }
 
     /* Conteúdo do dropdown (opções ocultas inicialmente) */
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: rgba(255, 12, 12, 0); /* Mude para uma cor com transparência */
+        background-color: rgba(255, 12, 12, 0);
+        /* Mude para uma cor com transparência */
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0);
         z-index: 1;
-        top: 100%; /* Posiciona logo abaixo do item pai */
-        left: 0; /* Alinha com o item "PROCEDIMENTOS" */
+        top: 100%;
+        /* Posiciona logo abaixo do item pai */
+        left: 0;
+        /* Alinha com o item "PROCEDIMENTOS" */
     }
-    
+
 
     /* Links dentro das opções do dropdown */
     .dropdown-content a {
@@ -127,27 +135,32 @@
         margin-top: 10px;
         background-color: rgb(230, 230, 230);
         width: 100%;
-        max-width: 80%; /* Limita a largura máxima */
+        max-width: 80%;
+        /* Limita a largura máxima */
         height: 900px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.918);
         border-radius: 3px;
         padding: 20px;
     }
+
     main #procedder ul,
-    main #procedeer ol{
+    main #procedeer ol {
         padding-left: 40px;
     }
 
-    main #procedder li{
+    main #procedder li {
         list-style-position: inside;
     }
-    p{
+
+    p {
         margin-top: 10px;
     }
-    h1{
+
+    h1 {
         text-align: center;
     }
-    h2{
+
+    h2 {
         margin-top: 10px;
     }
 
@@ -157,7 +170,8 @@
         width: 40%;
     }
 
-    th, td {
+    th,
+    td {
         border: 1px solid black;
         padding: 8px;
         text-align: center;

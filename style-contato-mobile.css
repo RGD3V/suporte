@@ -1,37 +1,37 @@
 @charset "UTF-8";
 @media (max-width: 768px) {
-    
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-html {
-    background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
-}
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-body main {
-    height: 100%;
-    background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
-    padding-top: 100px;
-}
+    html {
+        background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+    }
 
-body header span#menuBurguer {
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    background-color: orangered;
-    padding: 10px;
-}
+    body main {
+        height: 100%;
+        background-image: linear-gradient(to bottom, #f18407, #e68e2a, #ebab62);
+        padding-top: 100px;
+    }
 
-header nav#menu {
-    display: none;
-    text-align: center;
-    background-color: #f18407;
-}
+    body header span#menuBurguer {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        background-color: orangered;
+        padding: 10px;
+    }
+
+    header nav#menu {
+        display: none;
+        text-align: center;
+        background-color: #f18407;
+    }
 
     body header nav#menu ul li {
         background-color: orangered;
@@ -40,87 +40,88 @@ header nav#menu {
         border-radius: 5px;
     }
 
-        body header nav#menu ul li a {
-            display: block;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            font-size: 1em;
-            padding: 2px;
-            border-radius: 5px;
-        }
-
-            body header nav#menu ul li a:hover {
-                color: orangered;
-                background-color: white;
-            }  
-
-#div_tabela {
-    background-color: rgb(255, 255, 255);
-    width: 95%;
-    min-width: 150px;
-    margin: auto;
-    box-shadow: 0px 0px 3px black;
-}
-
-main table{
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin: auto;
-    width: 100%;
-    min-width: 150px;
-    margin-bottom: 5px;
-}
-
-main table thead tr,th {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-    background-color: orangered;
-    color: white;   
-}
-
-main table tbody tr,td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-    text-align: center;
-    font-size: 14px;
-}
-
-main table tbody tr:hover {
-    font-weight: bold;
-    background-color: rgb(240, 167, 107);
-}
-
-.href_whats {
-    text-decoration: none;
-    color: black;
-}
-
-.href_whats:hover {
-    background-color: rgb(57, 223, 7);
-    padding: 3px 5px;
-    border-radius: 20px;
-}
-
-.th1 {
-    padding: 5px 30px 
-}
-
-    .th2 {
-        padding: 5px 5px 
+    body header nav#menu ul li a {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        padding: 2px;
+        border-radius: 5px;
     }
 
-        .th3 {
-            padding: 5px 50px 
-            
-        }
+    body header nav#menu ul li a:hover {
+        color: orangered;
+        background-color: white;
+    }
 
-        @media (max-width: 1080px) {
-            #div_tabela {
+    #div_tabela {
+        background-color: rgb(255, 255, 255);
+        width: 95%;
+        min-width: 150px;
+        margin: auto;
+        box-shadow: 0px 0px 3px black;
+    }
+
+    main table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: auto;
+        width: 100%;
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+
+    main table thead tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        background-color: orangered;
+        color: white;
+    }
+
+    main table tbody tr,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    main table tbody tr:hover {
+        font-weight: bold;
+        background-color: rgb(240, 167, 107);
+    }
+
+    .href_whats {
+        text-decoration: none;
+        color: black;
+    }
+
+    .href_whats:hover {
+        background-color: rgb(57, 223, 7);
+        padding: 3px 5px;
+        border-radius: 20px;
+    }
+
+    .th1 {
+        padding: 5px 30px
+    }
+
+    .th2 {
+        padding: 5px 5px
+    }
+
+    .th3 {
+        padding: 5px 50px
+    }
+
+    @media (max-width: 1080px) {
+        #div_tabela {
             overflow-x: scroll;
-            }
         }
+    }
 
 }
