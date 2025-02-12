@@ -15,12 +15,10 @@
             <label for="menu">Selecione o Patio:</label>
             <select id="menu" name="menu" onchange="showMap()">
                 <option value="" disabled="" selected="" hidden=""></option>
-                <option value="AGUDOS">AGUDOS</option>
                 <option value="ARARAQUARA">ARARAQUARA</option>
-                <option value="AVARÉ">AVARÉ</option>
                 <option value="BARRETOS">BARRETOS</option>
                 <option value="BOTUCATU">BOTUCATU</option>
-                <option value="CARAGUATATUBA">CARAGUATATUBA</option>
+                <option value="CABRALIA">CABRALIA</option>
                 <option value="DRACENA">DRACENA</option>
                 <option value="GUARARAPES">GUARARAPES</option>
                 <option value="JAÚ">JAÚ</option>
@@ -47,19 +45,17 @@
 
     <script>
         var mapURLs = {
-            "AGUDOS": "https://www.google.com/maps/d/embed?mid=1eaBcrMFhLz_hTkvOwGz0YWUw1heHjos&ehbc=2E312F",
             "ARARAQUARA": "https://www.google.com/maps/d/embed?mid=1DHSIn8Vmme3PeKDWLOYRb0pzLxSMBXc&ehbc=2E312F",
-            "AVARÉ": "https://www.google.com/maps/d/embed?mid=1ka9Cy4pMBmHZbCaWBcnHKhAweAOqIjM&ehbc=2E312F",
             "BARRETOS": "https://www.google.com/maps/d/embed?mid=1IeT3x3iT4fCfjzR-z51XJO0vLlbsUKU&ehbc=2E312F",
             "BOTUCATU": "https://www.google.com/maps/d/embed?mid=1g_zWH3OXSRma54iKeKK_f5FXbuJxP1w&ehbc=2E312F",
-            "CARAGUATATUBA": "URL_DO_MAPA_PARA_CARAGUATATUBA",
+            "CABRALIA": "https://www.google.com/maps/d/embed?mid=1eaBcrMFhLz_hTkvOwGz0YWUw1heHjos&hl=pt-BR&ehbc=2E312F",
             "DRACENA": "https://www.google.com/maps/d/embed?mid=1IiKgQ897NfBa-W68tuWIDapJhht1UfU&ehbc=2E312F",
             "GUARARAPES": "https://www.google.com/maps/d/embed?mid=1ji8_ajDGxUo9PVjrUeNzToqmqLVHk4c&ehbc=2E312F",
             "JAÚ": "https://www.google.com/maps/d/embed?mid=1s3BfBnr91WYOnHb6ziEcH8yVl-1DUsA&ehbc=2E312F",
             "MARILIA": "https://www.google.com/maps/d/embed?mid=1s_owlBVB2-AKBAte2AGpxHMTQEkerwk&ehbc=2E312F",
             "OURINHOS": "https://www.google.com/maps/d/embed?mid=1KEcuT0HJi-SYLQsjLde9ty4W8mU7g-4&ehbc=2E312F",
             "PRESIDENTE PRUDENTE": "https://www.google.com/maps/d/embed?mid=1H3bxFx-kfWBqzbfZDRgCU7i88geK5Mk&ehbc=2E312F",
-            "SANTANA": "URL_DO_MAPA_PARA_SANTANA",
+            "SANTANA": "https://www.google.com/maps/d/embed?mid=1npaa4CLuBZYh0z_Gl3YMLbNbXyFuwGE&hl=pt-BR&ehbc=2E312F",
             "SJ. DO RIO PRETO": "https://www.google.com/maps/d/embed?mid=193SoD2_8UsqOy1Ca_oboG4xQKlL-OGI&ehbc=2E312F",
             "SOROCABA": "https://www.google.com/maps/d/embed?mid=1qNOaw59aS8LqJAdR9RRBDRzyP8wFplQ&ehbc=2E312F",
             "TEODORO SAMPAIO": "https://www.google.com/maps/d/embed?mid=1YebdY_rC85pReWZSzwCM9yv97nG4Y08&ehbc=2E312F",
@@ -80,8 +76,9 @@
             if (selectedPatio !== "") {
                 var iframe = document.createElement("iframe");
                 iframe.src = mapURLs[selectedPatio] || "";
-                iframe.width = "640";
-                iframe.height = "480";
+                iframe.width = "800";
+                iframe.height = "600";
+
                 mapContainer.appendChild(iframe);
             }
         }
