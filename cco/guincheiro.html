@@ -12,15 +12,14 @@
 <body>
     <div class="selecione">
         <label for="menu">Selecione o Patio:</label>
-        <select id="cidadeDropdown" onchange="mostrarTabela()">
-            <option value="" disabled selected hidden></option>
-            <option value="agudos">Agudos</option>
+        <select id="cidadeDropdown" onchange="mostrarTabela()">            <option value="" disabled selected hidden></option>
             <option value="araraquara">Araraquara</option>
-            <option value="avare">Avaré</option>
             <option value="barretos">Barretos</option>
             <option value="barrinha">Barrinha</option>
             <option value="botucatu">Botucatu</option>
+            <option value="cabralia">Cabralia</option>
             <option value="caragua">Caraguatatuba</option>
+            <option value="cerqueira">Cerqueira Cézar</option>
             <option value="dracena">Dracena</option>
             <option value="guararapes">Guararapes</option>
             <option value="jau">Jaú</option>
@@ -28,11 +27,12 @@
             <option value="ourinhos">Ourinhos</option>
             <option value="presidentePrudente">Presidente Prudente</option>
             <option value="santana">Santana da Ponte Pensa</option>
+            <option value="santacruz">Santa Cruz do Rio Pardo</option>
             <option value="saoJoseDoRioPreto">São José do Rio Preto</option>
             <option value="saovicente">São Vicente</option>
             <option value="serrana">Serrana</option>
             <option value="sorocaba">Sorocaba</option>
-            <option value="tremembe">Tremembé</option>
+            <!--<option value="tremembe">Tremembé</option> -->
             <option value="teodoro">Teodoro Sampaio</option>
             <option value="ubatuba">Ubatuba</option>
         </select>
@@ -40,89 +40,7 @@
     </div>
 
     <div>
-        <div id="agudosTable" class="cidade-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4">DER</th>
-                    </tr>
-                    <tr>
-                        <th>Nome Motorista</th>
-                        <th>Contato</th>
-                        <th>Tipo</th>
-                        <th>Cidades</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="matheusagudos">
-                        <td>Matheus Isaac Carvalho Goes Goes</td>
-                        <td>(14) 99692-7012</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="bauru">Bauru</option>
-                                <option value="duartina">Duartina</option>
-                                <option value="itapui">Itapui</option>
-                                <option value="lencois">Lenções Paulista</option>
-                                <option value="macatuba">Macatuba</option>
-                                <option value="paulistania">Paulistania</option>
-                                <option value="pirajui">Pirajui</option>
-                                <option value="agudos">Agudos</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="pauloagudos">
-                        <td>Paulo Roberto Xavier da Silva</td>
-                        <td>(14) 99794-8304</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="bauru">Bauru</option>
-                                <option value="duartina">Duartina</option>
-                                <option value="itapui">Itapui</option>
-                                <option value="lencois">Lenções Paulista</option>
-                                <option value="macatuba">Macatuba</option>
-                                <option value="paulistania">Paulistania</option>
-                                <option value="pirajui">Pirajui</option>
-                                <option value="agudos">Agudos</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="cleberagudos">
-                        <td>Cleber Araujo</td>
-                        <td>(14) 98151-7837</td>
-                        <td>GP</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="bauru">Bauru</option>
-                                <option value="duartina">Duartina</option>
-                                <option value="itapui">Itapui</option>
-                                <option value="lencois">Lenções Paulista</option>
-                                <option value="macatuba">Macatuba</option>
-                                <option value="paulistania">Paulistania</option>
-                                <option value="pirajui">Pirajui</option>
-                                <option value="agudos">Agudos</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="sergioagudos">
-                        <td>Sergio Correa de Araujo</td>
-                        <td>(14) 99733-2220</td>
-                        <td>GP</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="bauru">Bauru</option>
-                                <option value="agudos">Agudos</option>
-                            </select>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        
         <div id="araraquaraTable" class="cidade-table">
             <table>
                 <thead>
@@ -201,49 +119,6 @@
                             </select>
                         </td>
                     </tr>
-                    <tr id="alexandreararaquara">
-                        <td>Alexandre "App Eugênia Paula"</td>
-                        <td>(16) 99774-5793</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="saocarlos">São Carlos</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="viniciusararaquara">
-                        <td>Vinicius</td>
-                        <td>(16) 99727-3751</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="americobrasiliense">Américo Brasiliense</option>
-                                <option value="analandia">Analândia</option>
-                                <option value="boaesperancadosul">Boa Esperança do Sul</option>
-                                <option value="bocaina">Bocaina</option>
-                                <option value="corumbatai">Corumbataí</option>
-                                <option value="descalvado">Descalvado</option>
-                                <option value="dobrada">Dobrada</option>
-                                <option value="dourado">Dourado</option>
-                                <option value="gaviaopeixoto">Gavião Peixoto</option>
-                                <option value="guatapara">Guatapará</option>
-                                <option value="ibate">Ibaté</option>
-                                <option value="ibitinga">Ibitinga</option>
-                                <option value="matao">Matão</option>
-                                <option value="motuca">Motuca</option>
-                                <option value="novaeuropa">Nova Europa</option>
-                                <option value="portoferreira">Porto Ferreira</option>
-                                <option value="ribeiraobonito">Ribeirão Bonito</option>
-                                <option value="rincao">Rincão</option>
-                                <option value="santalucia">Santa Lúcia</option>
-                                <option value="saocarlos">São Carlos</option>
-                                <option value="tabatinga">Tabatinga</option>
-                                <option value="trabiju">Trabiju</option>
-                            </select>
-                        </td>
-                    </tr>
                     <tr id="ricardoararaquara">
                         <td>Ricardo Aparecido Salatino</td>
                         <td>(16) 99186-9263</td>
@@ -276,86 +151,14 @@
                             </select>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="avareTable" class="cidade-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4">DER</th>
-                    </tr>
-                    <tr>
-                        <th>Nome Motorista</th>
-                        <th>Contato</th>
-                        <th>Tipo</th>
-                        <th>Cidades</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="gabrielavare">
-                        <td>Gabriel Nunes da Silva</td>
-                        <td>(14) 98809-9022</td>
+                    <tr id="raphaelchiessi">
+                        <td>Raphael Chiessi Salvo</td>
+                        <td>(16) 99708-3646</td>
                         <td>GL</td>
                         <td>
                             <select>
                                 <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="avare">Avaré</option>
-                                <option value="aguasdesantabarbara">Águas de Santa Bárbara</option>
-                                <option value="arandu">Arandu</option>
-                                <option value="cerqueiracesar">Cerqueira César</option>
-                                <option value="iaras">Iaras</option>
-                                <option value="itai">Itaí</option>
-                                <option value="paranapanema">Paranapanema</option>
-                                <option value="taquarituba">Taquarituba</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="ipirangaavare">
-                        <td>Ipiranga</td>
-                        <td>(14) 99790-5483</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="avare">Avaré</option>
-                                <option value="aguasdesantabarbara">Águas de Santa Bárbara</option>
-                                <option value="arandu">Arandu</option>
-                                <option value="cerqueiracesar">Cerqueira César</option>
-                                <option value="iaras">Iaras</option>
-                                <option value="itai">Itaí</option>
-                                <option value="paranapanema">Paranapanema</option>
-                                <option value="taquarituba">Taquarituba</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="pauloavare">
-                        <td>Paulo Lopes (Cerq. César)</td>
-                        <td>(14) 99707-9761</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="avare">Avaré</option>
-                                <option value="cerqueiracesar">Cerqueira César</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="thiagoavare">
-                        <td>Thiago</td>
-                        <td>(14) 99741-4287</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="avare">Avaré</option>
-                                <option value="aguasdesantabarbara">Águas de Santa Bárbara</option>
-                                <option value="arandu">Arandu</option>
-                                <option value="cerqueiracesar">Cerqueira César</option>
-                                <option value="iaras">Iaras</option>
-                                <option value="itai">Itaí</option>
-                                <option value="paranapanema">Paranapanema</option>
-                                <option value="taquarituba">Taquarituba</option>
+                                <option value="saocarlos">São Carlos</option>
                             </select>
                         </td>
                     </tr>
@@ -384,18 +187,11 @@
                         <td>VW 10160</td>
                         <td>Barretos</td>
                     </tr>
-                    <tr id="ericbarretos">
-                        <td>Eric Pellegrin</td>
-                        <td>(17) 99169-0117</td>
-                        <td>EFV1B78</td>
-                        <td>VW/8.120 EURO3</td>
-                        <td>Guaira</td>
-                    </tr>
                     <tr id="luizbarretos">
-                        <td>Luiz Fernando</td>
+                        <td>Luiz Fernando Norberto</td>
                         <td>(17) 99118-9548</td>
-                        <td>-</td>
-                        <td>-</td>
+                        <td>AMV3D91</td>
+                        <td>M.BENZ/915C</td>
                         <td>Guaira</td>
                     </tr>
                 </tbody>
@@ -598,6 +394,107 @@
                             </select>
                         </td>
                     </tr>
+                    <tr id="gabrielavare">
+                        <td>Gabriel Nunes da Silva</td>
+                        <td>(14) 98809-9022</td>
+                        <td>GL</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="avare">Avaré</option>
+                                <option value="aguasdesantabarbara">Águas de Santa Bárbara</option>
+                                <option value="arandu">Arandu</option>
+                                <option value="cerqueiracesar">Cerqueira César</option>
+                                <option value="iaras">Iaras</option>
+                                <option value="itai">Itaí</option>
+                                <option value="paranapanema">Paranapanema</option>
+                                <option value="taquarituba">Taquarituba</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="cabraliaTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">DER</th>
+                    </tr>
+                    <tr>
+                        <th>Nome Motorista</th>
+                        <th>Contato</th>
+                        <th>Tipo</th>
+                        <th>Cidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="matheusagudos">
+                        <td>Matheus Isaac Carvalho Goes Goes</td>
+                        <td>(14) 99692-7012</td>
+                        <td>GL</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="bauru">Bauru</option>
+                                <option value="duartina">Duartina</option>
+                                <option value="itapui">Itapui</option>
+                                <option value="lencois">Lenções Paulista</option>
+                                <option value="macatuba">Macatuba</option>
+                                <option value="paulistania">Paulistania</option>
+                                <option value="pirajui">Pirajui</option>
+                                <option value="agudos">Agudos</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="pauloagudos">
+                        <td>Paulo Roberto Xavier da Silva</td>
+                        <td>(14) 99794-8304</td>
+                        <td>GL</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="bauru">Bauru</option>
+                                <option value="duartina">Duartina</option>
+                                <option value="itapui">Itapui</option>
+                                <option value="lencois">Lenções Paulista</option>
+                                <option value="macatuba">Macatuba</option>
+                                <option value="paulistania">Paulistania</option>
+                                <option value="pirajui">Pirajui</option>
+                                <option value="agudos">Agudos</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="claudemirfrancisco">
+                        <td>Claudemir Francisco</td>
+                        <td>(14) 99657-2218</td>
+                        <td>GL</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="bauru">Bauru</option>
+                                <option value="duartina">Duartina</option>
+                                <option value="itapui">Itapui</option>
+                                <option value="lencois">Lenções Paulista</option>
+                                <option value="macatuba">Macatuba</option>
+                                <option value="paulistania">Paulistania</option>
+                                <option value="pirajui">Pirajui</option>
+                                <option value="agudos">Agudos</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="fabianocesar">
+                        <td>Fabiano Cesar Justo</td>
+                        <td>(14) 99805-1795</td>
+                        <td>GL</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="bauru">Bauru</option>
+                                <option value="agudos">Agudos</option>
+                            </select>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -622,15 +519,12 @@
                         <td>
                             <select>
                                 <option value="" disabled selected hidden>Selecione a cidade</option>
-                                <option value="ilhabela">Ilha Bela</option>
-                                <option value="jambeiro">Jambeiro</option>
-                                <option value="paraibuna">Paraibuna</option>
-                                <option value="saosebastiao">São Sebastião</option>
+                                <option value="caragua">Caraguatatuba</option>
                             </select>
                         </td>
                     </tr>
                     <tr id="rafaelcaragua">
-                        <td>Rafael Chiessi Salvo</td>
+                        <td>Raphael Mendes Bastos Melo</td>
                         <td>(12) 98210-7386</td>
                         <td>GL/GP</td>
                         <td>
@@ -640,6 +534,41 @@
                                 <option value="jambeiro">Jambeiro</option>
                                 <option value="paraibuna">Paraibuna</option>
                                 <option value="saosebastiao">São Sebastião</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="cerqueiraTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">DER</th>
+                    </tr>
+                    <tr>
+                        <th>Nome Motorista</th>
+                        <th>Contato</th>
+                        <th>Tipo</th>
+                        <th>Cidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="paulocerqueira">
+                        <td>Paulo Lopes (Cerq. César)</td>
+                        <td>(14) 99707-9761</td>
+                        <td>GL</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="avare">Avaré</option>
+                                <option value="aguasdesantabarbara">Aguas de Santa Barbara</option>
+                                <option value="arandu">Arandu</option>
+                                <option value="cerqueiracesar">Cerqueira César</option>
+                                <option value="Iaras">Iaras</option>
+                                <option value="itai">Itaí</option>
+                                <option value="paranapanema">Paranapanema</option>
+                                <option value="taquarituba">Taquarituba</option>
                             </select>
                         </td>
                     </tr>
@@ -818,6 +747,24 @@
                             </select>
                         </td>
                     </tr>
+                    <tr id="ailton">
+                        <td>Aílton Donizete</td>
+                        <td>(14) 99772-2720</td>
+                        <td>GL/GP</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="bariri">Bariri</option>
+                                <option value="barrabonita">Barra Bonita</option>
+                                <option value="bocaina">Bocaina</option>
+                                <option value="boraceia">Boracéia</option>
+                                <option value="doiscorregos">Dois Córregos</option>
+                                <option value="igaracudotiete">Igaraçu do Tietê</option>
+                                <option value="itapui">Itapuí</option>
+                                <option value="pederneiras">Pederneiras</option>
+                            </select>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -884,9 +831,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="adilsonourinhos">
-                        <td>Adilson "Boiadeiro"</td>
-                        <td>(14) 98132-2935</td>
+                    <tr id="carlosmagnum">
+                        <td>Carlos Magno Teixeira"</td>
+                        <td>(14) 98174-0742</td>
                         <td>GL/GP</td>
                         <td>
                             <select>
@@ -902,20 +849,7 @@
                                 <option value="piraju">Piraju</option>
                                 <option value="platina">Platina</option>
                                 <option value="saltogrande">Salto Grande</option>
-                                <option value="saopedrodoturvo">São Pedro do Turvo</option>
                                 <option value="sarutaia">Sarutaiá</option>
-                                <option value="timburi">Timburi</option>
-                                <option value="ubirajara">Ubirajara</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="andrepiraju">
-                        <td>André (Piraju)</td>
-                        <td>(14) 99688-1134</td>
-                        <td>GL</td>
-                        <td>
-                            <select>
-                                <option value="piraju">Piraju</option>
                             </select>
                         </td>
                     </tr>
@@ -925,9 +859,9 @@
                         <td>GL</td>
                         <td>
                             <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
                                 <option value="bernardinodecampos">Bernardino de Campos</option>
-                                <option value="espiritosantodoturvo">Espírito Santo do Turvo
-                                <option>
+                                <option value="espiritosantodoturvo">Espírito Santo do Turvo</option>
                                 <option value="ipaussu">Ipauçu</option>
                                 <option value="oleo">Óleo</option>
                                 <option value="ribeiraodosul">Ribeirão do Sul</option>
@@ -1065,32 +999,6 @@
                         <td>Kleber Aparecido Teodoro</td>
                         <td>EJC 6394 <br> EVU 4266</td>
                         <td>VW/8.120 EURO3 <br> FORD/ CARGO 816 S</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione uma cidade</option>
-                                <option value="Alfredo Marcondes">Alfredo Marcondes</option>
-                                <option value="Álvares Machado">Álvares Machado</option>
-                                <option value="Indiana">Indiana</option>
-                                <option value="Santo Expedito">Santo Expedito</option>
-                                <option value="Taciba">Taciba</option>
-                                <option value="Anhumas">Anhumas</option>
-                                <option value="Caiabu">Caiabu</option>
-                                <option value="Pirapozinho">Pirapozinho</option>
-                                <option value="Presidente Bernardes">Presidente Bernardes</option>
-                                <option value="Emilianópolis">Emilianópolis</option>
-                                <option value="Martinópolis">Martinópolis</option>
-                                <option value="Narandiba">Narandiba</option>
-                                <option value="Regente Feijó">Regente Feijó</option>
-                                <option value="Tarabai">Tarabai</option>
-                                <option value="Estrela do Norte">Estrela do Norte</option>
-                                <option value="Sandovalina">Sandovalina</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr id="pvagner">
-                        <td>Vagner de moura bezerro</td>
-                        <td>HFB7B79</td>
-                        <td>FORD CARGO 816</td>
                         <td>
                             <select>
                                 <option value="" disabled selected hidden>Selecione uma cidade</option>
@@ -1295,8 +1203,41 @@
                 </tbody>
             </table>
         </div>
-        <div id="santacruz" class="cidade-table">
-
+        <div id="santacruzTable" class="cidade-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">DER / Detran / GCM / Civil</th>
+                    </tr>
+                    <tr>
+                        <th>Nome Motorista</th>
+                        <th>Contato</th>
+                        <th>Tipo</th>
+                        <th>Cidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="sebastiaoourinhos">
+                        <td>Sebastião</td>
+                        <td>(14) 99800-6127</td>
+                        <td>GL</td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected hidden>Selecione a cidade</option>
+                                <option value="bernardinodecampos">Bernardino de Campos</option>
+                                <option value="espiritosantodoturvo">Espírito Santo do Turvo</option>
+                                <option value="ipaussu">Ipauçu</option>
+                                <option value="oleo">Óleo</option>
+                                <option value="ribeiraodosul">Ribeirão do Sul</option>
+                                <option value="santacruzdoriopardo">Santa Cruz do Rio Pardo</option>
+                                <option value="saopedrodoturvo">São Pedro do Turvo</option>
+                                <option value="timburi">Timburi</option>
+                                <option value="ubirajara">Ubirajara</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div id="saoJoseDoRioPretoTable" class="cidade-table">
             <table>
@@ -1312,35 +1253,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="douglas">
-                        <td>Douglas Vicente Rodrigues</td>
-                        <td>LNI2A69</td>
-                        <td>VW/8.120</td>
-                        <td>
-                            <select>
-                                <option value="" disabled selected hidden>Selecione uma cidade</option>
-                                <option value="São José R. Preto">São José R. Preto</option>
-                                <option value="Monte Aprazível">Monte Aprazível</option>
-                                <option value="Ipiguá">Ipiguá</option>
-                                <option value="Mirassolândia">Mirassolândia</option>
-                                <option value="Macaubal">Macaubal</option>
-                                <option value="Bálsamo">Bálsamo</option>
-                                <option value="Bady Bassitt">Bady Bassitt</option>
-                                <option value="Catiguá">Catiguá</option>
-                                <option value="Cosmorama">Cosmorama</option>
-                                <option value="Embaúba">Embaúba</option>
-                                <option value="Engenheiro Schmitt">Engenheiro Schmitt</option>
-                                <option value="General Salgado">General Salgado</option>
-                                <option value="Icém">Icém</option>
-                                <option value="Itajobi">Itajobi</option>
-                                <option value="Nhandeara">Nhandeara</option>
-                                <option value="Novais">Novais</option>
-                                <option value="Monte Aprazível">Monte Aprazível</option>
-                                <option value="Mirassolândia">Mirassolândia</option>
-                                <option value="Nipuã">Nipuã</option>
-                            </select>
-                        </td>
-                    </tr>
                     <tr id="helio">
                         <td>Helio de Souza Guimaraes</td>
                         <td>AKH4187</td>
@@ -1428,116 +1340,117 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr id="andre-luiz">
                         <td>André Luiz de Sousa Pivato</td>
                         <td>333.937.718-92</td>
                         <td>PESADO</td>
                     </tr>
-                    <tr>
+                    <tr id="bruno-lopes">
                         <td>Bruno Lopes Silva</td>
                         <td>025.421.718-40</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="eduardo-pini">
                         <td>Eduardo Pini Martins</td>
                         <td>384.379.558-40</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="fabio-silva">
                         <td>Fabio da Silva Pereira</td>
                         <td>296.041.588-48</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="flavio-roderley">
                         <td>Flávio Roderley Antônio</td>
                         <td>140.442.078-95</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="guilherme-reis">
                         <td>Guilherme Reis Nunes</td>
                         <td>404.247.878-65</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="gustavo-silva">
                         <td>Gustavo Silva d Almeida Pinto</td>
                         <td>480.777.328-36</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="hiago-silva">
                         <td>Hiago da Silva Nascimento</td>
                         <td>416.523.978-09</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="jefferson-christiano">
                         <td>Jefferson Christiano Ribeiro</td>
                         <td>290.588.698-65</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="jose-carlos">
                         <td>José Carlos dos Santos Martins</td>
                         <td>062.234.368-82</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="jose-luciano">
                         <td>José Luciano de Menezes Gouveia</td>
                         <td>939.476.744-49</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="luiz-rogerio">
                         <td>Luiz Rogério Ferreira Rosa</td>
                         <td>116.947.598-14</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="marcelo-martins">
                         <td>Marcelo Martins Schiavo</td>
                         <td>218.673.628-48</td>
                         <td>PESADO</td>
                     </tr>
-                    <tr>
+                    <tr id="marcos-pereira">
                         <td>Marcos Pereira da Silva</td>
                         <td>288.999.838-01</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="otavio-silva">
                         <td>Otávio Silva Santos</td>
                         <td>403.999.638-04</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="paulo-henrique">
                         <td>Paulo Henrique da Silva Pereira de Jesus</td>
                         <td>461.857.838-60</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="rafael-cardoso">
                         <td>Rafael Cardoso dos Santos</td>
                         <td>459.593.988-42</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="renan-piaggi">
                         <td>Renan Piaggi Rodrigues</td>
                         <td>348.938.358-31</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="roberto-silva">
                         <td>Roberto da Silva</td>
                         <td>427.388.958-75</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="rodrigo-almeida">
                         <td>Rodrigo Almeida da Silva</td>
                         <td>431.407.218-03</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="sergio-ricardo">
                         <td>Sérgio Ricardo Pereira da Silva</td>
                         <td>318.386.538-64</td>
                         <td>LEVE</td>
                     </tr>
-                    <tr>
+                    <tr id="vinicius-fernandez">
                         <td>Vinicius Fernandez Lasso De Lá Vega</td>
                         <td>415.972.978-95</td>
                         <td>LEVE</td>
                     </tr>
+                    
                 </tbody>
             </table>
         </div>
@@ -1578,7 +1491,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th colspan="4">DER / PRF / Detran</th>
+                        <th colspan="2">DER / PRF / Detran</th>
                     </tr>
                     <tr>
                         <th>Nome Motorista</th>
@@ -1588,12 +1501,12 @@
                 <tbody>
                     <tr>
                         <td>Gilson</td>
-                        <td>12 99132-3504</td>
+                        <td>(12) 99132-3509</td>
                     </tr>
                     <tr>
-                        <td>Marcos</td>
-                        <td>12 98215-1313</td>
-                    </tr>
+                        <td>Luana</td>
+                        <td>(12) 99151-7028</td>
+                   <!--</tr>
                     <tr>
                         <td>Carlinhos</td>
                         <td>12 99764-9523</td>
@@ -1605,11 +1518,11 @@
                     <tr>
                         <td>Everton</td>
                         <td>12 97406-3976</td>
-                    </tr>
+                    </tr>-->
                 </tbody>
             </table>
         </div>
-        <div id="tremembeTable" class="cidade-table">
+        <!--<div id="tremembeTable" class="cidade-table">
             <table id="tabela">
                 <thead>
                     <tr>
@@ -1702,30 +1615,34 @@
                         <td>EMU3467</td>
                         <td>FORD/CARGO 816 S</td>
                     </tr>
-        </div>
+                </tbody>
+        </div>-->
+
     </div>
 
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var tables = document.querySelectorAll('.cidade-table');
-            tables.forEach(function (table) {
-                table.style.display = 'none';
-            });
+            esconderTabelas();
         });
-
-        function mostrarTabela() {
-            var tables = document.querySelectorAll('.cidade-table');
+    
+        function esconderTabelas() {
+            const tables = document.querySelectorAll('.cidade-table');
             tables.forEach(function (table) {
                 table.style.display = 'none';
             });
-            var cidadeSelecionada = document.getElementById('cidadeDropdown').value;
-
-            var cidadeTable = document.getElementById(cidadeSelecionada + 'Table');
+        }
+    
+        function mostrarTabela() {
+            esconderTabelas();
+    
+            const cidadeSelecionada = document.getElementById('cidadeDropdown').value;
+            const cidadeTable = document.getElementById(cidadeSelecionada + 'Table');
+            
             cidadeTable.style.display = 'block';
         }
     </script>
-
+    
 
 </body>
 
