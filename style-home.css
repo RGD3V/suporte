@@ -144,7 +144,7 @@
     }
 
     main #procedder ul,
-    main #procedeer ol {
+    main #procedder ol {
         padding-left: 40px;
     }
 
@@ -202,5 +202,8 @@
         transform: scale(1.05);
     }
     
+    .linkdetran{
+        background-color: red;
+    }
 
 }
