@@ -135,16 +135,16 @@
         margin-top: 10px;
         background-color: rgb(230, 230, 230);
         width: 100%;
-        max-width: 80%;
+        max-width: 75%;
         /* Limita a largura máxima */
-        height: 900px;
+        height: 1100px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.918);
         border-radius: 3px;
         padding: 20px;
     }
 
     main #procedder ul,
-    main #procedeer ol {
+    main #procedder ol {
         padding-left: 40px;
     }
 
@@ -175,6 +175,35 @@
         border: 1px solid black;
         padding: 8px;
         text-align: center;
+    }
+
+   #arquivos{
+    margin-top: 20px;
+   }
+
+    .pdf{
+        text-decoration: none;
+    }
+    
+    .botao {
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: #FFA500; /* Light orange color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .botao:hover {
+        background-color: #FF8C00; /* Darker orange on hover */
+        transform: scale(1.05);
+    }
+    
+    .linkdetran{
+        background-color: red;
     }
 
 }
