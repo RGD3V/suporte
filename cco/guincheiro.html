@@ -12,7 +12,8 @@
 <body>
     <div class="selecione">
         <label for="menu">Selecione o Patio:</label>
-        <select id="cidadeDropdown" onchange="mostrarTabela()">            <option value="" disabled selected hidden></option>
+        <select id="cidadeDropdown" onchange="mostrarTabela()">
+            <option value="" disabled selected hidden></option>
             <option value="araraquara">Araraquara</option>
             <option value="barretos">Barretos</option>
             <option value="barrinha">Barrinha</option>
@@ -39,7 +40,7 @@
         <a href="../index.html">Voltar</a>
     </div>
 
-    <div>   
+    <div>
         <div id="araraquaraTable" class="cidade-table">
             <table>
                 <thead>
@@ -1465,8 +1466,8 @@
                         <td>415.972.978-95</td>
                         <td>LEVE</td>
                     </tr>
-                    
-                    
+
+
                 </tbody>
             </table>
         </div>
@@ -1522,7 +1523,7 @@
                     <tr>
                         <td>Luana</td>
                         <td>(12) 99151-7028</td>
-                   <!--</tr>
+                        <!--</tr>
                     <tr>
                         <td>Carlinhos</td>
                         <td>12 99764-9523</td>
@@ -1641,24 +1642,24 @@
         document.addEventListener('DOMContentLoaded', function () {
             esconderTabelas();
         });
-    
+
         function esconderTabelas() {
             const tables = document.querySelectorAll('.cidade-table');
             tables.forEach(function (table) {
                 table.style.display = 'none';
             });
         }
-    
+
         function mostrarTabela() {
             esconderTabelas();
-    
+
             const cidadeSelecionada = document.getElementById('cidadeDropdown').value;
             const cidadeTable = document.getElementById(cidadeSelecionada + 'Table');
-            
+
             cidadeTable.style.display = 'block';
         }
     </script>
-    
+
 
 </body>
 

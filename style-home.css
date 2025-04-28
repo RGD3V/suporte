@@ -130,14 +130,14 @@
         display: block;
         background-color: rgba(0, 0, 0, 0);
     }
-
+/* Estilo DER */
     #procedder {
         margin-top: 10px;
         background-color: rgb(230, 230, 230);
         width: 100%;
         max-width: 75%;
         /* Limita a largura máxima */
-        height: 1100px;
+        height: 900px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.918);
         border-radius: 3px;
         padding: 20px;
@@ -151,6 +151,53 @@
     main #procedder li {
         list-style-position: inside;
     }
+
+/* Estilo ANTT */
+
+    #procedantt {
+        margin-top: 10px;
+        background-color: rgb(230, 230, 230);
+        width: 100%;
+        max-width: 75%;
+        /* Limita a largura máxima */
+        height: 800px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.918);
+        border-radius: 3px;
+        padding: 20px;
+    }
+
+    main #procedantt ul,
+    main #procedantt ol {
+        padding-left: 40px;
+    }
+
+    main #procedantt li {
+        list-style-position: inside;
+    }
+
+/* Estilo DETRAN */
+
+    #procedetran {
+        margin-top: 10px;
+        background-color: rgb(230, 230, 230);
+        width: 100%;
+        max-width: 75%;
+        /* Limita a largura máxima */
+        height: 1050px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.918);
+        border-radius: 3px;
+        padding: 20px;
+    }
+
+    main #procedetran ul,
+    main #procedetran ol {
+        padding-left: 40px;
+    }
+
+    main #procedetran li {
+        list-style-position: inside;
+    }
+
 
     p {
         margin-top: 10px;
